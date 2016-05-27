@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona. Form</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__logo">
+			<img src="http://placehold.it/150x100" alt="Седона">
+		</div>
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="index.html">Главная</a></li>
+				<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+				<li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+				<li class="main-nav__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="index-logo-banner"></div>
+		<section class="feedback">
+			<h2 class="feedback__title">Оставьте свой отзыв</h2>
+			<p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о пощенных Вами достопримечательностях</p>
+		</section> 
+		<form class="form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="form-person">
+				<h2 class="form__title-section">Представьтесь, пожалуйста:</h2>
+				<div class="form__row">
+					<label for="name">Имя:</label>
+					<input type="text" name="name" id="name" placeholder="Петр">
+				</div>
+				<div class="form__row">
+					<label for="surname">Фамилия:</label>
+					<input type="text" name="surname" id="surname" placeholder="Иванов">
+				</div>
+				<div class="form__row">
+					<label for="patronymic">Отчество:</label>
+					<input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+				</div>
+			</div>
+			<div class="form-contacts">
+				<h2 class="form__title-section">Контактная информация:</h2>
+				<label for="phone-number">Контактный телефон:</label>
+				<input type="text" name="phone number" id="phone-number" placeholder="Введите телефон">
+				<label for="email">Электронная почта:</label>
+				<input type="text" name="e-mail" id="email" placeholder="Введите e-mail">
+			</div>
+			<div class="form-oppinions">
+				<h2 class="form__title-section">Ваше общее впечатление:</h2>
+				<input type="radio" name="oppinion" value="Скорее положительное" id="first-opp">
+				<label for="first-opp">Скорее положительное</label>
+				<input type="radio" name="oppinion" value="Скорее отрицательное" id="second-opp">
+				<label for="second-opp">Скорее отрицательное</label>
+				<input type="radio" name="oppinion" value="Затрудняюсь ответить" id="third-opp">
+				<label for="third-opp">Затрудняюсь ответить</label>
+			</div>
+			<div class="form-visited-sights">
+				<h2 class="form__title-section">Посещенные достопримечательности:</h2>
+				<input type="checkbox" name="sight" value="Мост Дьявола" id="first-sight" checked>
+				<label for="first-sight">Мост Дьявола</label>
+				<input type="checkbox" name="sight" value="Слайд-парк" id="second-sight" checked>
+				<label for="second-sight">Слайд-парк</label>
+				<input type="checkbox" name="sight" value="Гора-Колокол" id="third-sight">
+				<label for="third-sight">Гора-Колокол</label>
+				<input type="checkbox" name="sight" value="Красные скалы" id="fourth-sight" checked>
+				<label for="fourth-sight">Красные скалы</label>
+			</div>
+			<div class="form-emotion-recall">
+				<h2 class="form__title-section">Опишите свои эмоции:</h2>
+				<textarea placeholder="Опишите подробно все свои восторги" rows="5" name="comment"></textarea>
+				<button class="form__btn" type="submit">Отправить отзыв</button>
+			</div>
+		</form>
+	</main>
+	<footer class="page-footer">
+		<section class="page-footer-hashtag">
+        	<a href="#visitsedona">
+        		#visitsedona
+        	</a>
+    	</section>
+    	<section class="page-footer-social">
+        	<a class="social-btn" href="#">
+        		Твиттер
+        	</a>
+        	<a class="social-btn" href="#">
+        		Фейсбук
+        	</a>
+        	<a class="social-btn" href="#">
+        		Youtube
+        	</a>
+      	</section>
+      	<section class="page-footer-copyright">
+      		<p>Website by</p>
+        	<a href="https://htmlacademy.ru">HTML Academy</a>
+      	</section>
+	</footer>
+</body>
+</html>

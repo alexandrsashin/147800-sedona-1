@@ -7,22 +7,24 @@
 <body>
 <div class="site-wrapper">
 	<header class="page-header">
-        <nav class="top-row">
-    		<div class="page-header__logo">
-    			<img src="http://placehold.it/150x100" alt="Седона">
-    		</div>
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-			<ul class="main-nav__list">
-				<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-				<li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
-				<li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
-				<li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a></li>
-			</ul>
-		</nav>
+        <div class="top-row">
+            <div class="page-header__logo">
+                <img src="http://placehold.it/150x100" alt="Седона">
+            </div>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+                <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
+                <li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
+                <li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a></li>
+            </ul>
+        </nav>
         <div class="page-slogan">
             <img src="http://placehold.it/150x100" alt="Слоган">
         </div>
-	</header>
+    </header>
 	<main class="page-content">
         <div class="intro">
     		<h2 class="intro__title">
@@ -88,13 +90,11 @@
         	<img class="video__image" src="http://placehold.it/150x100" alt="Видеоролик">
             <div class="video__player">
                 <div class="video-controls">
-                    <button  class="video-controls__replay">
-                        <div class="video-controls__bar">
-                            <div class="video-controls__scale"></div>
-                            <div class="video-controls__toggle"></div>
-                        </div>
-                    </button>
-                    <button class="video-controls__subtitles"></button>
+                    <button  class="video-controls__replay"></button>
+                    <div class="video-controls__bar">
+                        <div class="video-controls__scale"></div>
+                        <div class="video-controls__toggle"></div>
+                    </div>
                     <button class="video-controls__subtitles"></button>
                     <button class="video-controls__fullscreen"></button>
                 </div>

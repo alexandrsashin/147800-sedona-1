@@ -1,0 +1,32 @@
+.causes-item {
+	@include box-sizing;
+
+	background: $text-background;
+	color: $text-color;
+	border-top: 1px solid $text-background;
+	border-bottom: 1px solid $text-background;
+
+	&__title {
+		margin: 45px 0 20px;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+	}
+
+	&__number {
+		margin-bottom: 26px;
+
+		@include text-font;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+	}
+
+	&__text {
+		margin-bottom: 45px;
+
+		@include text-font;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+	}
+}

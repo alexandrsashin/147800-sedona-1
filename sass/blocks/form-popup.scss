@@ -1,0 +1,33 @@
+.form-popup {
+	border-top: 5px solid #fcfcfc;	
+
+	&--failure {
+		padding: 0 0 35px;
+	}
+
+	&__title {
+		margin: 46px 0 40px;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+
+		color: $h-color;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+
+		@include text-font;
+		font-family: $main-font-family;
+		line-height: 24px;
+		text-transform: $text-transform;
+	}
+
+	&__footer {
+		margin-top: 10px;
+		padding: 20px 0;
+
+		background: $input-background;
+	}
+}

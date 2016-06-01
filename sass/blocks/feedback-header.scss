@@ -1,0 +1,22 @@
+.feedback-header {
+	padding-top: 41px;
+
+	&__title {
+		margin: 0 0 40px;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+
+		color: $h-color;
+	}
+
+	&__text {
+		margin: 0 0 24px;
+
+		@include text-font;
+		line-height: 24px;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+	}
+}

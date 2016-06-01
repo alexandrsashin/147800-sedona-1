@@ -1,0 +1,38 @@
+.gallery-group {
+	&__item {
+		margin: 0;
+		padding-bottom: 24px;
+
+		border-top: 1px solid $h-line-color;
+	}
+
+	&__item-link img {
+		margin: 22px 0;
+		width: 280px;
+		height: 280px;
+	}
+
+	&__item-title {
+		margin: 0 0 12px;
+
+		font: 14px/24px $bold-font-family;
+		text-transform: $photo-h-transform;
+		
+		color: $h-color;
+	}
+
+	&__item-author {
+		margin: 0 0 19px;
+
+		font: 14px/24px $main-font-family;
+		text-transform: $photo-text-transform;
+
+		color: $main-color;
+	}
+
+	&__item-likes {
+		font: 14px/24px $bold-font-family;
+		
+		color: $h-color;
+	}
+}

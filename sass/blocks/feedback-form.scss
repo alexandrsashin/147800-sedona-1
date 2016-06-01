@@ -1,0 +1,165 @@
+.feedback-form {
+	&__item {
+		padding-top: 24px;
+
+		border-top: 1px solid $h-line-color;
+	}
+
+	&__title {
+		margin: 0 0 24px;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+
+		color: $h-color;
+	}
+
+	&__group {
+		padding-bottom: 5px;
+	}
+
+	&__field {
+		margin: 0 0 20px;
+	}
+
+	&__field--radio {
+		margin: 23px 0 29px;
+	}
+
+	&__field--radio:last-child {
+		margin-bottom: 45px;
+	}
+
+	&__field--sights {
+		margin: 19px 0 48px;
+	}
+
+	&__field--sights:last-child {
+		margin-bottom: 42px
+	}
+
+	&__label {
+		@include text-font;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+
+		&--radio,
+		&--checkbox {
+			margin-left: 23px;
+
+			@include h-font;
+			font-family: $bold-font-family;
+			text-transform: $label-text-transform;
+
+			color: $h-color;
+		}
+	}
+
+	&__label--phone {
+		margin: 8px 0 15px;
+	}
+
+	&__label--email {
+		margin: 0 0 15px;
+	}
+
+	&__input {
+		padding: 22px;
+		@include box-sizing;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $label-text-transform;
+
+		background: $input-background;
+		color: $h-color;
+		border: none;
+
+		outline: none;
+	}
+
+	&__input::-webkit-input-placeholder {
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $label-text-transform;
+
+		color: $h-color;
+
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input::-moz-placeholder {
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $label-text-transform;
+
+		color: $h-color;
+
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input:-moz-placeholder {
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $label-text-transform;
+
+		color: $h-color;
+
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input:-ms-input-placeholder {
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $label-text-transform;
+
+		color: $h-color;
+
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input:focus::-webkit-input-placeholder {
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input:focus::-moz-placeholder {
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input:focus:-moz-placeholder {
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input:focus:-ms-input-placeholder {
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	&__input--phone {
+		margin: 0 0 50px;
+	}
+
+	&__input--email {
+		margin: 0 0 23px;
+	}
+
+	&__input--textarea {
+		margin: 0 0 51px;
+
+		resize: none;
+	}
+
+	&__submit {
+		margin: 0 0 47px;
+	}
+}
+
+

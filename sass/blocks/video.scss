@@ -1,0 +1,30 @@
+.video {
+	padding-top: 40px;
+	@include box-sizing;
+
+	border-top: 1px solid $h-line-color;
+
+	&__title {
+		margin: 0 0 38px;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+
+		color: $h-color;
+	}
+
+	&__text {
+		margin: 0 0 40px;
+
+		@include text-font;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+	}
+
+	&__image {
+		margin: 0 0 115px;
+		width: 320px;
+		height: 201px;
+	}
+}

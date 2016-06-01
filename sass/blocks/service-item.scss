@@ -1,0 +1,19 @@
+.service-item {
+	&__title {
+		margin: 42px 0 0;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+
+		color: $h-color;
+	}
+
+	&__text {
+		margin: 26px 0 0;
+
+		@include text-font;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+	}
+}

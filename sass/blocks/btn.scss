@@ -1,0 +1,14 @@
+.btn {
+	padding: 22px;
+
+	font-size: 18px;
+	line-height: 26px;
+	font-family: $bold-font-family;
+	text-transform: $btn-text-transform;
+
+	background: $btn-background;
+	color: $btn-color;
+	border: none;
+
+	outline: none;
+}

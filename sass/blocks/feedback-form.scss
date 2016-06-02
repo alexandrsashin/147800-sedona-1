@@ -6,7 +6,9 @@
 	}
 
 	&__title {
-		margin: 0 0 24px;
+		float: left;
+		margin: 0 0 27px;
+		width: 100%;
 
 		@include h-font;
 		font-family: $bold-font-family;

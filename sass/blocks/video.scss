@@ -1,5 +1,5 @@
 .video {
-	padding-top: 40px;
+	padding: 40px 0 115px;
 	@include box-sizing;
 
 	border-top: 1px solid $h-line-color;
@@ -23,7 +23,7 @@
 	}
 
 	&__image {
-		margin: 0 0 115px;
+		margin: 0;
 		width: 320px;
 		height: 201px;
 	}

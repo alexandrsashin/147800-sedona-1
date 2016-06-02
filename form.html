@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Sedona. Form</title>
 </head>
@@ -33,8 +32,8 @@
 			<p class="feedback-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
 		</section> 
 		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-			<div class="feedback-form__item">
-				<h2 class="feedback-form__title">Представьтесь, пожалуйста:</h2>
+			<fieldset class="feedback-form__item">
+				<legend class="feedback-form__title">Представьтесь, пожалуйста:</legend>
 				<div class="feedback-form__group">
 					<div class="feedback-form__field  feedback-form__field--person">
 						<label for="name" class="feedback-form__label">Имя:</label>
@@ -49,22 +48,23 @@
 						<input type="text" class="feedback-form__input" name="patronymic" id="patronymic" placeholder="Александрович">
 					</div>
 				</div>
-			</div>
-			<div class="feedback-form__item">
-				<h2 class="feedback-form__title">Контактная информация:</h2>
+			</fieldset>
+			<fieldset class="feedback-form__item">
+				<legend class="feedback-form__title">Контактная информация:</legend>
 				<div class="feedback-form__group">
 					<div class="feedback-form__field  feedback-form__field--contacts">
 						<label class="feedback-form__label  feedback-form__label--phone" for="phone-number">Контактный телефон:</label>
 						<input type="text" class="feedback-form__input  feedback-form__input--phone" name="phone number" id="phone-number" placeholder="Введите телефон">
+						<span class="feedback-form__field-error">Ошибка, перепроверьте номер</span>
 					</div>
 					<div class="feedback-form__field  feedback-form__field--contacts">
 						<label class="feedback-form__label  feedback-form__label--email" for="email">Электронная почта:</label>
 						<input type="text" class="feedback-form__input  feedback-form__input--email" name="e-mail" id="email" placeholder="Введите e-mail">
 					</div>
 				</div>
-			</div>
-			<div class="feedback-form__item">
-				<h2 class="feedback-form__title">Ваше общее впечатление:</h2>
+			</fieldset>
+			<fieldset class="feedback-form__item">
+				<legend class="feedback-form__title">Ваше общее впечатление:</legend>
 				<div class="feedback-form__group">
 					<div class="feedback-form__field  feedback-form__field--radio">
 						<input type="radio" class="feedback-form__input  feedback-form__input--radio" name="oppinion" value="Скорее положительное" id="first-opp">
@@ -79,9 +79,9 @@
 						<label class="feedback-form__label  feedback-form__label--radio" for="third-opp">Затрудняюсь ответить</label>
 					</div>
 				</div>
-			</div>
-			<div class="feedback-form__item">
-				<h2 class="feedback-form__title">Посещенные достопримечательности:</h2>
+			</fieldset>
+			<fieldset class="feedback-form__item">
+				<legend class="feedback-form__title">Посещенные достопримечательности:</legend>
 				<div class="feedback-form__group">
 					<div class="feedback-form__field  feedback-form__field--sights">
 						<input type="checkbox" class="feedback-form__input  feedback-form__input--checkbox" name="sight" value="Мост Дьявола" id="first-sight" checked>
@@ -100,11 +100,11 @@
 						<label class="feedback-form__label  feedback-form__label--checkbox" for="fourth-sight">Красные скалы</label>
 					</div>
 				</div>
-			</div>
-			<div class="feedback-form__item">
-				<h2 class="feedback-form__title">Опишите свои эмоции:</h2>
+			</fieldset>
+			<fieldset class="feedback-form__item">
+				<legend class="feedback-form__title">Опишите свои эмоции:</legend>
 				<textarea class="feedback-form__input  feedback-form__input--textarea" placeholder="Опишите подробно все свои восторги" rows="5" name="comment"></textarea>
-			</div>
+			</fieldset>
 			<div class="feedback-form__submit">
 				<button class="feedback-form__submit-btn  btn" type="submit">Отправить отзыв</button>
 			</div>

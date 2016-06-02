@@ -1,4 +1,5 @@
 .causes-item {
+	padding-top: 45px;
 	@include box-sizing;
 
 	background: $text-background;
@@ -7,7 +8,7 @@
 	border-bottom: 1px solid $text-background;
 
 	&__title {
-		margin: 45px 0 20px;
+		margin: 0 0 20px;
 
 		@include h-font;
 		font-family: $bold-font-family;
@@ -15,7 +16,7 @@
 	}
 
 	&__number {
-		margin-bottom: 26px;
+		margin: 0 0 26px;
 
 		@include text-font;
 		font-family: $main-font-family;
@@ -23,7 +24,7 @@
 	}
 
 	&__text {
-		margin-bottom: 45px;
+		margin: 26px 0 45px;
 
 		@include text-font;
 		font-family: $main-font-family;

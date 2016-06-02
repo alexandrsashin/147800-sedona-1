@@ -1,6 +1,6 @@
 .intro {
 	&__title {
-		margin-top: 44px;
+		margin: 0 0 40px;
 
 		@include h-font;
 		font-family: $bold-font-family;
@@ -10,7 +10,7 @@
 	}
 
 	&__text {
-		margin: 38px 0 34px;
+		margin: 0 0 34px;
 
 		@include text-font;
 		font-family: $main-font-family;

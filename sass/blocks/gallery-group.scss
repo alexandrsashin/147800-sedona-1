@@ -1,19 +1,19 @@
 .gallery-group {
 	&__item {
 		margin: 0;
-		padding-bottom: 24px;
+		padding: 22px 0 23px;
 
 		border-top: 1px solid $h-line-color;
 	}
 
 	&__item-link img {
-		margin: 22px 0;
+		margin: 0 0 22px;
 		width: 280px;
 		height: 280px;
 	}
 
 	&__item-title {
-		margin: 0 0 12px;
+		margin: 0 0 15px;
 
 		font: 14px/24px $bold-font-family;
 		text-transform: $photo-h-transform;
@@ -22,7 +22,7 @@
 	}
 
 	&__item-author {
-		margin: 0 0 19px;
+		margin: 0 0 21px;
 
 		font: 14px/24px $main-font-family;
 		text-transform: $photo-text-transform;

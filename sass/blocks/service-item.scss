@@ -1,0 +1,33 @@
+.service-item {
+	&--white {
+		padding: 40px 0 0;
+	}
+
+	&--gray {
+		padding: 33px 0;
+
+		border-bottom: 1px solid #d6d6d6;
+	}
+
+	&--gray:last-child {
+		border-bottom: none;
+	}
+
+	&__title {
+		margin: 0 0 26px;
+
+		@include h-font;
+		font-family: $bold-font-family;
+		text-transform: $h-text-transform;
+
+		color: $h-color;
+	}
+
+	&__text {
+		margin: 0;
+
+		@include text-font;
+		font-family: $main-font-family;
+		text-transform: $text-transform;
+	}
+}

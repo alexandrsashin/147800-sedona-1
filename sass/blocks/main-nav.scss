@@ -1,0 +1,28 @@
+.main-nav {
+
+	&__list {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+
+	&__item {
+		padding: 7px 0;
+		@include box-sizing;
+
+		text-align: center;
+
+		background: $btn-background;
+		border-top: 1px solid #9ac2db;
+		border-bottom: 1px solid #678fa8;
+	}
+
+	&__link {
+		font: bold 18px/40px $main-font-family;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		color: $btn-color;
+	}
+}

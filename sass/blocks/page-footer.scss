@@ -1,0 +1,19 @@
+.page-footer {
+	padding: 31px 0 36px;
+
+	background: #fefefe;
+
+	&__hashtag {
+		margin: 0 0 42px;
+
+		font: 21px/26px $bold-font-family;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		color: #000;
+	}
+
+	&__social {
+		margin: 0 0 51px;
+	}
+}

@@ -1,0 +1,35 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+
+/* header and footer blocks, container blocks */
+@import "blocks/site-wrapper.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/top-row.scss";
+@import "blocks/page-slogan.scss";
+@import "blocks/page-content.scss";
+@import "blocks/btn.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-btn.scss";
+@import "blocks/copyright.scss";
+
+/* index.html */
+@import "blocks/intro.scss";
+@import "blocks/causes-item.scss";
+@import "blocks/service-item.scss";
+@import "blocks/service-row.scss";
+@import "blocks/booking.scss";
+@import "blocks/map.scss";
+
+/* form.html */
+@import "blocks/feedback-header.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/form-popup.scss";
+
+/* photo.html */
+@import "blocks/gallery-group.scss";
+@import "blocks/video.scss";
+@import "blocks/video-controls.scss";

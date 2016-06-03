@@ -2,17 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Sedona</title>
 </head>
 <body>
 <div class="site-wrapper">
 	<header class="page-header">
-		<div class="top-row">
-			<div class="page-header__logo">
-				<img src="http://placehold.it/150x100" alt="Седона">
-			</div>
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-		</div>
 		<nav class="main-nav">
 			<ul class="main-nav__list">
 				<li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
@@ -21,6 +16,12 @@
 				<li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a></li>
 			</ul>
 		</nav>
+		<div class="top-row">
+			<div class="page-header__logo">
+				<img src="http://placehold.it/150x100" alt="Седона">
+			</div>
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		</div>
 		<div class="page-slogan">
 			<img src="http://placehold.it/150x100" alt="Слоган">
 		</div>
@@ -39,9 +40,9 @@
 				<h2 class="causes-item__title">
 					Настоящий городок
 				</h2>
-				<span class="causes-item__number">
+				<p class="causes-item__number">
 					&ndash; №1 &ndash;
-				</span>
+				</p>
 				<p class="causes-item__text">
           			Седона - не аттракцион для туристов, там течет своя жизнь
         		</p>
@@ -51,7 +52,7 @@
 			</div>
 		</section>
 		<section class="service-row">
-			<div class="service-item">
+			<div class="service-item  service-item--white">
 				<h2 class="service-item__title">
 		         	Жилье
 		        </h2>
@@ -59,7 +60,7 @@
 		         	Рекомендуем пожить в настоящем мотеле, все как в кино!
 		        </p>
 			</div>
-			<div class="service-item">
+			<div class="service-item  service-item--white">
 				<h2 class="service-item__title">
 		         	Сувениры
 		        </h2>
@@ -67,7 +68,7 @@
 		        	Не только китайского, но и местного производства!
 		        </p>
 			</div>
-			<div class="service-item">
+			<div class="service-item  service-item--white">
 				<h2 class="service-item__title">
 		         	Еда
 		        </h2>
@@ -81,9 +82,9 @@
 				<h2 class="causes-item__title">
 					Там есть мост дьявола
 				</h2>
-				<span class="causes-item__number">
+				<p class="causes-item__number">
 					&ndash; №2 &ndash;
-				</span>
+				</p>
 				<p class="causes-item__text">
           			Да, по нему можно пройти! Если конечно вы осмелитесь
         		</p>
@@ -92,49 +93,49 @@
 				<img src="http://placehold.it/150x100" alt="Мост Дьявола">
 			</div>
 		</section>
-		<section class="service-row  services-row--gray">
-			<div class="service-item">
+		<section class="service-row  service-row--gray">
+			<div class="service-item  service-item--gray">
 				<h2 class="service-item__title">
 		         	Небольшая площадь
 		        </h2>
-		        <span class="causes-item__number">
+		        <p class="causes-item__number">
 					&ndash; №3 &ndash;
-				</span>
+				</p>
 		        <p class="service-item__text">
 		         	Все достопримечательности находятся очень близко
 		        </p>
 			</div>
-			<div class="service-item">
+			<div class="service-item  service-item--gray">
 				<h2 class="service-item__title">
 		         	Красивая дорога
 		        </h2>
-		        <span class="causes-item__number">
+		        <p class="causes-item__number">
 					&ndash; №4 &ndash;
-				</span>
+				</p>
 		        <p class="service-item__text">
 		         	Ехать в Седону из Лас-Вегаса совсем не скучно!
 		        </p>
 			</div>
-			<div class="service-item">
+			<div class="service-item  service-item--gray">
 				<h2 class="service-item__title">
 		         	Мало туристов
 		        </h2>
-		        <span class="causes-item__number">
+		        <p class="causes-item__number">
 					&ndash; №5 &ndash;
-				</span>
+				</p>
 		        <p class="service-item__text">
 		         	Большинство едет в Гранд Каньон и толпится там
 		        </p>
 			</div>
 		</section>
-	    <div class="booking ">
+	    <div class="booking">
 	    	<h2 class="booking__title">
 	        	Заинтересовались?
 	    	</h2>
 	    	<p class="booking__text">
 	        	Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
 	    	</p>
-	    	<a href="form.html" class="booking__btn  btn">Поиск гостиницы в Седоне</a>
+	    	<a href="form.html" class="booking__btn  btn">Найти гостиницу</a>
 	    </div>
 	    <div class="map">
 	    	
@@ -156,7 +157,7 @@
         	</a>
       	</section>
       	<address class="copyright">
-      		<p class="copyright__text">Website by</p>
+      		<p class="copyright__text">Разработано</p>
         	<a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
       	</address>
 	</footer>

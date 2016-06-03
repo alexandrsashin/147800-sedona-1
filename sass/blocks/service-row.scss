@@ -1,0 +1,15 @@
+.service-row {
+	padding: 0 0 43px;
+	@include box-sizing;
+
+	border-top: 1px solid $main-background;
+	border-bottom: 1px solid $main-background;
+
+	&--gray {
+		padding-top: 0;
+
+		background: #eee;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+}

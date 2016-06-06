@@ -1,11 +1,27 @@
 .causes-item {
+	@include clearfix;
+
 	padding-top: 45px;
 	@include box-sizing;
 
+	text-align: center;
+
 	background: $text-background;
 	color: $text-color;
-	border-top: 1px solid $text-background;
-	border-bottom: 1px solid $text-background;
+
+	@media #{$tablet} {
+		padding-top: 0;
+	}
+
+	&__wrapper {
+		padding: $mobile-padding;
+
+		@media #{$tablet} {
+			float: left;
+			padding: 0;
+			width: calc(100% / 3);
+		}
+	}
 
 	&__title {
 		margin: 0 0 20px;
@@ -13,6 +29,10 @@
 		@include h-font;
 		font-family: $bold-font-family;
 		text-transform: $h-text-transform;
+
+		@media #{$tablet} {
+			margin-top: 50px;
+		}
 	}
 
 	&__number {
@@ -29,5 +49,26 @@
 		@include text-font;
 		font-family: $main-font-family;
 		text-transform: $text-transform;
+	}
+
+	&__img {
+		min-height: 260px;
+
+		@media #{$tablet} {
+			float: left;
+			width: calc(100% / 3);
+		}
+
+		&--1 {
+			background: $main-background url("../../img/photo-city@1x.jpg") center bottom no-repeat;
+			-webkit-background-size: auto 100%;
+			background-size: auto 100%;
+		}
+
+		&--2 {
+			background: $main-background url("../../img/photo-bridge@1x.jpg") center bottom no-repeat;
+			-webkit-background-size: auto 100%;
+			background-size: auto 100%;
+		}
 	}
 }

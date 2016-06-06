@@ -1,15 +1,82 @@
 .gallery-group {
+	margin: 0;
+	padding: $mobile-padding;
+
+	font-size: 0;
+
+	@media #{$tablet} {
+		padding: $tablet-padding;
+	}
+
+	@media #{$desktop} {
+		padding: 0;
+	}
+
 	&__item {
 		margin: 0;
-		padding: 22px 0 23px;
+		padding-top: 22px;
+		padding-bottom: 23px;
 
 		border-top: 1px solid $h-line-color;
+
+		@media #{$tablet} {
+			display: inline-block;
+			padding: 0;
+			width: 50%;
+			vertical-align: top;
+
+			border-top: none;
+
+			&:first-child {
+				width: 100%;
+			}
+		}
+
+		@media #{$desktop} {
+			position: relative;
+
+			width: calc(100% / 3);
+		}
 	}
 
 	&__item-link img {
 		margin: 0 0 22px;
+		padding: 0;
 		width: 280px;
 		height: 280px;
+
+		@media #{$tablet} {
+			margin: 0;
+		}
+	}
+
+	&__item-caption {
+		@media #{$tablet} {
+			@include clearfix;
+
+			margin: 0;
+			padding-top: 22px;
+			padding-left: 21px;
+
+			background: $photo-descr-background;
+		}
+
+		@media #{$desktop} {
+			position: absolute;
+			bottom: 0;
+			z-index: 3;
+
+			background: $photo-descr-desktop-background;
+		}
+	}
+
+	&__item-descr {
+		@media #{$tablet} {
+			float: left;
+			width: 70%;
+
+			text-align: left;
+		}
 	}
 
 	&__item-title {
@@ -19,6 +86,10 @@
 		text-transform: $photo-h-transform;
 		
 		color: $h-color;
+
+		@media #{$desktop} {
+			color: $photo-descr-desktop-color;
+		}
 	}
 
 	&__item-author {
@@ -28,11 +99,47 @@
 		text-transform: $photo-text-transform;
 
 		color: $main-color;
+
+		@media #{$desktop} {
+			color: $photo-descr-desktop-color;
+		}
 	}
 
 	&__item-likes {
+		position: relative;
+
+		padding-left: 28px;
+
 		font: 14px/24px $bold-font-family;
 		
 		color: $h-color;
+
+		&::before {
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+			z-index: 3;
+			content: "";
+
+			width: 22px;
+			height: 22px;
+
+			background: url("../../img/icon-like.svg") no-repeat;
+			-webkit-background-size: 22px 22px;
+			background-size: 22px 22px;
+		}
+
+		@media #{$tablet} {
+			float: right;
+			padding-top: 14px;
+			padding-right: 30px;
+			width: 10%;
+
+			text-align: right;
+		}
+
+		@media #{$desktop} {
+			color: $photo-descr-desktop-color;
+		}
 	}
 }

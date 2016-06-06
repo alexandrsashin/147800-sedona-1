@@ -1,10 +1,18 @@
 .video {
-	padding: 40px 0 115px;
+	padding-top: 40px;
+	padding-bottom: 115px;
 	@include box-sizing;
+
+	text-align: center;
 
 	border-top: 1px solid $h-line-color;
 
+	@media #{$tablet} {
+		border-top: none;
+	}
+
 	&__title {
+		padding: $mobile-padding;
 		margin: 0 0 38px;
 
 		@include h-font;
@@ -15,6 +23,7 @@
 	}
 
 	&__text {
+		padding: $mobile-padding;
 		margin: 0 0 40px;
 
 		@include text-font;

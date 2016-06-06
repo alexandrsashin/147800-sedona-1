@@ -1,12 +1,37 @@
 .service-item {
+	@include box-sizing;
+
+	@media #{$tablet} {
+	float: left;
+	width: calc(100% / 3);
+	}
+
 	&--white {
-		padding: 40px 0 0;
+		padding: $mobile-padding;
+		padding-top: 40px;
+		padding-left: calc(6.25% + 50px);
+
+		@media #{$tablet} {
+			padding: 164px 9% 0;
+
+			text-align: center;
+		}
 	}
 
 	&--gray {
-		padding: 33px 0;
+		padding: $mobile-padding;
+		padding-top: 33px;
+		padding-bottom: 33px;
+
+		text-align: center;
 
 		border-bottom: 1px solid #d6d6d6;
+
+		@media #{$tablet} {
+			padding: 33px 9% 0;
+
+			border-bottom: none;
+		}
 	}
 
 	&--gray:last-child {
@@ -14,6 +39,8 @@
 	}
 
 	&__title {
+		position: relative;
+
 		margin: 0 0 26px;
 
 		@include h-font;
@@ -21,6 +48,64 @@
 		text-transform: $h-text-transform;
 
 		color: $h-color;
+
+		&::before {
+			position: absolute;
+			top: -8px;
+			left: 0;
+			z-index: 3;
+			content: "";
+				
+			margin-left: -30px;
+			width: 40px;
+			height: 40px;
+
+			transform: translate(-50%,0);
+
+			@media #{$tablet} {
+				top: -60px;
+				left: 50%;
+
+				margin-left: -40px;
+				width: 80px;
+				height: 80px;
+
+				transform: translate(0,-50%);
+			}
+		}
+
+		&--house::before {
+			background: url("../../img/icon-house.svg") no-repeat;
+			-webkit-background-size: 40px 40px;
+			background-size: 40px 40px;
+
+			@media #{$tablet} {
+				-webkit-background-size: 80px 80px;
+				background-size: 80px 80px;
+			}
+		}
+
+		&--souvenir::before {
+			background: url("../../img/icon-gift.svg") no-repeat;
+			-webkit-background-size: 40px 40px;
+			background-size: 40px 40px;
+
+			@media #{$tablet} {
+				-webkit-background-size: 80px 80px;
+				background-size: 80px 80px;
+			}
+		}
+
+		&--food::before {
+			background: url("../../img/icon-burger.svg") no-repeat;
+			-webkit-background-size: 40px 40px;
+			background-size: 40px 40px;
+
+			@media #{$tablet} {
+				-webkit-background-size: 80px 80px;
+				background-size: 80px 80px;
+			}
+		}
 	}
 
 	&__text {

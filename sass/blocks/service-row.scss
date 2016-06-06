@@ -5,6 +5,10 @@
 	border-top: 1px solid $main-background;
 	border-bottom: 1px solid $main-background;
 
+	@media #{$tablet} {
+		@include clearfix;
+	}
+
 	&--gray {
 		padding-top: 0;
 

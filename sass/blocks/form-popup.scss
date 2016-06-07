@@ -1,12 +1,33 @@
 .form-popup {
-	border-top: 5px solid #fcfcfc;	
+	padding-top: 50px;
+	@include box-sizing;
+
+	text-align: center;
+
+	background: $main-background;
+	border: 1px solid $main-background;
+
+	@media #{$tablet} {
+		margin: 0 auto;
+	}
 
 	&--failure {
 		padding: 0 0 35px;
+
+		@media #{$tablet} {
+			width: 400px;
+		}
+	}
+
+	&--success {
+		@media #{$tablet} {
+			width: 640px;
+		}
 	}
 
 	&__title {
-		margin: 46px 0 40px;
+		margin: $mobile-padding;;
+		margin: 0 0 40px;
 
 		@include h-font;
 		font-family: $bold-font-family;
@@ -16,6 +37,7 @@
 	}
 
 	&__text {
+		margin: $mobile-padding;
 		margin-bottom: 30px;
 
 		@include text-font;
@@ -26,8 +48,18 @@
 
 	&__footer {
 		margin-top: 10px;
-		padding: 20px 0;
+		padding: $mobile-padding;;
+		padding-top: 20px;
+		padding-bottom: 20px;
 
 		background: $input-background;
+	}
+
+	&__btn--failure {
+		width: 180px;
+	}
+
+	&__btn--success {
+		width: 100%;
 	}
 }

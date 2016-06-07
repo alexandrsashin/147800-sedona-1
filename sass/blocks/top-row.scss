@@ -1,0 +1,11 @@
+.top-row {
+	position: relative;
+
+	min-height: 56px;
+	@include box-sizing;
+
+	@media #{$tablet} {
+		position: static;
+		min-height: 0;
+	}
+}

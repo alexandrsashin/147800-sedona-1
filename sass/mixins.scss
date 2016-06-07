@@ -13,3 +13,12 @@
 	font-size: 14px;
 	line-height: 21px;
 }
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}

@@ -1,5 +1,14 @@
 .booking {
-	padding: 33px 0 49px;
+	padding: $mobile-padding;
+	padding-top: 33px;
+	padding-bottom: 49px;
+
+	text-align: center;
+
+	@media #{$tablet} {
+		margin: 0 auto;
+		width: 458px;
+	}
 
 	&__title {
 		margin: 0 0 32px;

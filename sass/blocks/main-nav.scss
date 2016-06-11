@@ -1,89 +1,91 @@
 .main-nav {
 
-	&__list {
-		margin: 0;
-		padding: 0;
+}
 
-		list-style: none;
+.main-nav__list {
+	margin: 0;
+	padding: 0;
 
-		font-size: 0;
-	}
+	list-style: none;
 
-	&__item {
-		position: relative;
-		padding: 7px 0;
-		@include box-sizing;
+	font-size: 0;
+}
 
-		text-align: center;
+.main-nav__item {
+	position: relative;
+	padding: 7px 0;
+	box-sizing: border-box;
 
-		background: $btn-background;
-		border-top: 1px solid #9ac2db;
-		border-bottom: 1px solid #678fa8;
+	text-align: center;
 
-		&:first-child::after {
-			position: absolute;
-			top: 50%;
-			right: 6.25%;
-			z-index: 2;
-			content: "";
+	background: $btn-background;
+	border-top: 1px solid #9ac2db;
+	border-bottom: 1px solid #678fa8;
 
-			width: 24px;
-			height: 24px;
+	&:first-child::after {
+		position: absolute;
+		top: 50%;
+		right: 6.25%;
+		z-index: 2;
+		content: "";
+
+		width: 24px;
+		height: 24px;
 			
-			background: url("../../img/icon-cross.svg") no-repeat;
+		background: url("../../img/icon-cross.svg") no-repeat;
 
-			transform: translate(0,-50%);
-
-			@media #{$tablet} {
-				display: none;
-			}
-		}
-
-		@media #{$tablet} {
-			display: inline-block;
-			width: 20%;
-			vertical-align: middle;
-
-			background: $main-background;
-			border-top: 1px solid $main-background;
-			border-bottom: 1px solid $main-background;
-
-			&:nth-child(2) {
-				margin-right: 20%;
-			}
-		}
-	}
-
-	&__link {
-		font: bold 18px/40px $main-font-family;
-		text-transform: uppercase;
-		text-decoration: none;
-
-		color: $btn-color;
-
-		@media #{$tablet} {
-			font-size: 14px;
-			line-height: 26px;
-
-			color: $h-color;
-		}
-	}
-
-	&__toggle {
-		float: right;
-		margin: 17px 6.25% 17px 0;
-		width: 23px;
-		height: 22px;
-
-		font-size: 0;
-
-		background: url("../../img/icon-menu.svg") 0 0 no-repeat;
-		border: none;
-
-		outline: none;
+		transform: translate(0,-50%);
 
 		@media #{$tablet} {
 			display: none;
 		}
+	}
+
+	@media #{$tablet} {
+		display: inline-block;
+		padding: 13px 0;
+		width: 20%;
+		vertical-align: middle;
+
+		background: $main-background;
+		border-top: 1px solid $main-background;
+		border-bottom: 1px solid $main-background;
+
+		&:nth-child(2) {
+			margin-right: 20%;
+		}
+	}
+}
+
+.main-nav__link {
+	font: bold 18px/40px $main-font-family;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	color: $btn-color;
+
+	@media #{$tablet} {
+		font-size: 14px;
+		line-height: 26px;
+
+		color: $h-color;
+	}
+}
+
+.main-nav__toggle {
+	float: right;
+	margin: 17px 6.25% 17px 0;
+	width: 23px;
+	height: 22px;
+
+	font-size: 0;
+
+	background: url("../../img/icon-menu.svg") 0 0 no-repeat;
+	border: none;
+
+	outline: none;
+
+	@media #{$tablet} {
+		display: none;
 	}
 }

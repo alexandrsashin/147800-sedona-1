@@ -1,4 +1,7 @@
 body {
 	padding: 0;
-	background: $overflow-background !important;
+	
+	word-break: break-word;
+
+	background: $overflow-background;
 }

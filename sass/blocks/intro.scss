@@ -1,23 +1,59 @@
 .intro {
 	padding: $mobile-padding;
+	padding: 0 calc(6.25% + 5px);
 
 	text-align: center;
 
-	&__title {
-		margin: 0 0 40px;
-
-		@include h-font;
-		font-family: $bold-font-family;
-		text-transform: $h-text-transform;
-
-		color: $h-color;
+	@media #{$tablet} {
+		padding: 36px 15% 41px;
 	}
 
-	&__text {
-		margin: 0 0 34px;
-
-		@include text-font;
-		font-family: $main-font-family;
-		text-transform: $text-transform;
+	@media #{$desktop} {
+		padding: 76px 28% 43px;
 	}
+
+	&--index {
+		padding-bottom: 18px;
+
+		@media #{$tablet} {
+			padding: 10px 15% 25px;
+		}
+
+		@media #{$desktop} {
+			padding: 10px 28% 25px;
+		}
+	}
+}
+
+.intro__title {
+	margin: 0 0 28px;
+
+	@include h-font;
+	font-family: $bold-font-family;
+	text-transform: $h-text-transform;
+
+	color: $h-color;
+
+	@media #{$tablet} {
+		font-size: $h-table-font-size;
+	}
+
+	&--photo {
+		margin-bottom: 22px;
+
+		@media #{$tablet} {
+			margin-bottom: 29px;
+
+			font-size: 30px;
+		} 	
+	}
+}
+
+.intro__text {
+	margin: 0 0 25px;
+
+	@include text-font;
+	font-family: $main-font-family;
+	line-height: 26px;
+	text-transform: $text-transform;
 }

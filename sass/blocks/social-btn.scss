@@ -1,6 +1,6 @@
 .social-btn {
 	display: inline-block;
-	margin-right: 6px;
+	margin-right: 2px;
 	width: 46px;
 	height: 48px;
 	vertical-align: middle;
@@ -16,7 +16,6 @@
 	&--twitter {
 		background-image: url("../../img/icon-twitter.svg");
 		background-position: center;
-		-webkit-background-size: 19px 19px;
 		background-size: 19px 19px;
 		background-repeat: no-repeat; 
 	}
@@ -24,7 +23,6 @@
 	&--facebook {
 		background-image: url("../../img/icon-facebook.svg");
 		background-position: center;
-		-webkit-background-size: 19px 19px;
 		background-size: 19px 19px;
 		background-repeat: no-repeat; 
 	}
@@ -32,7 +30,6 @@
 	&--youtube {
 		background-image: url("../../img/icon-youtube.svg");
 		background-position: center;
-		-webkit-background-size: 19px 19px;
 		background-size: 19px 19px;
 		background-repeat: no-repeat; 
 	}

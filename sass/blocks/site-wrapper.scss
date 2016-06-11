@@ -1,7 +1,7 @@
 .site-wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
-	@include box-sizing;
+	box-sizing: border-box;
 
 	font: 14px/21px $main-font-family;
 

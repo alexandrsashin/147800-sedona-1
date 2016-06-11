@@ -1,7 +1,7 @@
 $mobile-padding: 0 6.25%;
 $tablet-padding: 0 7.81%;
-$desktop-padding: 0 10%;
 
+$h-table-font-size: 21px;
 $main-font-family: "PT Sans", "Arial", sans-serif;
 $bold-font-family: "PT Sans Bold", "Arial", sans-serif;
 $h-text-transform: uppercase;
@@ -15,6 +15,7 @@ $main-background: #fff;
 $btn-background: #81b3d2;
 $text-background: #81b3d2;
 $input-background: #f2f2f2;
+$input-add-background: #e6e6e6;
 $overflow-background: #f2f2f2;
 $photo-descr-background: #f2f2f2;
 $photo-descr-desktop-background: rgba(0,0,0,0.3);
@@ -24,6 +25,7 @@ $h-color: #000;
 $btn-color: #fff;
 $text-color: #fff;
 $photo-descr-desktop-color: #fff;
+$error-color: #ff5c5c;
 
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1200px)";

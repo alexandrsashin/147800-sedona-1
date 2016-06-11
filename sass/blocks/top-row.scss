@@ -2,7 +2,7 @@
 	position: relative;
 
 	min-height: 56px;
-	@include box-sizing;
+	box-sizing: border-box;
 
 	@media #{$tablet} {
 		position: static;

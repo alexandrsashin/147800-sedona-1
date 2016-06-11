@@ -1,8 +1,8 @@
 .causes-item {
-	@include clearfix;
-
-	padding-top: 45px;
-	@include box-sizing;
+	display: flex;
+    flex-direction: column;
+	padding-top: 39px;
+	box-sizing: border-box;
 
 	text-align: center;
 
@@ -10,65 +10,81 @@
 	color: $text-color;
 
 	@media #{$tablet} {
+		flex-direction: row;
 		padding-top: 0;
 	}
 
-	&__wrapper {
-		padding: $mobile-padding;
-
+	&--reverse {
 		@media #{$tablet} {
-			float: left;
-			padding: 0;
-			width: calc(100% / 3);
+			flex-direction: row-reverse;
 		}
 	}
+}
 
-	&__title {
-		margin: 0 0 20px;
+.causes-item__wrapper {
+	padding: $mobile-padding;
+	box-sizing: border-box;
 
-		@include h-font;
-		font-family: $bold-font-family;
-		text-transform: $h-text-transform;
+	@media #{$tablet} {
+		padding: 0 6%;
+		width: calc(100% / 3);
+	}
+}
 
-		@media #{$tablet} {
-			margin-top: 50px;
-		}
+.causes-item__title {
+	margin: 0 0 10px;
+
+	@include h-font;
+	font-family: $bold-font-family;
+	text-transform: $h-text-transform;
+
+	@media #{$tablet} {
+		margin-top: 45px;
+
+		font-size: $h-table-font-size;
 	}
 
-	&__number {
-		margin: 0 0 26px;
+	@media #{$desktop} {
+		margin-top: 52px;
+		padding: 0 10%;
+	}
+}
 
-		@include text-font;
-		font-family: $main-font-family;
-		text-transform: $text-transform;
+.causes-item__number {
+	margin: 0 0 16px;
+
+	@include text-font;
+	font-family: $main-font-family;
+	text-transform: $text-transform;
+
+	@media #{$tablet} {
+		margin: 0 0 21px;
+	}
+}
+
+.causes-item__text {
+	margin: 0 0 37px;
+
+	@include text-font;
+	font-family: $main-font-family;
+	text-transform: $text-transform;
+}
+
+.causes-item__img {
+	min-height: 260px;
+
+	@media #{$tablet} {
+		width: calc(100% / 3 * 2);
+		min-height: 256px;
 	}
 
-	&__text {
-		margin: 26px 0 45px;
-
-		@include text-font;
-		font-family: $main-font-family;
-		text-transform: $text-transform;
+	&--1 {
+		background: $main-background url("../../img/photo-city@1x.jpg") 51% bottom no-repeat;
+		background-size: auto 100%;
 	}
 
-	&__img {
-		min-height: 260px;
-
-		@media #{$tablet} {
-			float: left;
-			width: calc(100% / 3);
-		}
-
-		&--1 {
-			background: $main-background url("../../img/photo-city@1x.jpg") center bottom no-repeat;
-			-webkit-background-size: auto 100%;
-			background-size: auto 100%;
-		}
-
-		&--2 {
-			background: $main-background url("../../img/photo-bridge@1x.jpg") center bottom no-repeat;
-			-webkit-background-size: auto 100%;
-			background-size: auto 100%;
-		}
+	&--2 {
+		background: $main-background url("../../img/photo-bridge@1x.jpg") 51% bottom no-repeat;
+		background-size: auto 100%;
 	}
 }

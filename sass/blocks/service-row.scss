@@ -1,16 +1,21 @@
 .service-row {
-	padding: 0 0 43px;
-	@include box-sizing;
+	display: flex;
+    flex-direction: column;
+	padding: 34px 0 8px;
+	box-sizing: border-box;
 
 	border-top: 1px solid $main-background;
 	border-bottom: 1px solid $main-background;
 
 	@media #{$tablet} {
-		@include clearfix;
+		flex-direction: row;
+		padding: 34px 0 32px;
 	}
 
 	&--gray {
+		padding: $mobile-padding;
 		padding-top: 0;
+		padding-bottom: 0;
 
 		background: #eee;
 		border-top: 1px solid #eee;

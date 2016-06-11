@@ -3,22 +3,36 @@
 
 	text-align: center;
 
-	&__title {
-		margin: 0 0 40px;
-
-		@include h-font;
-		font-family: $bold-font-family;
-		text-transform: $h-text-transform;
-
-		color: $h-color;
+	@media #{$tablet} {
+	    padding-top: 38px;
 	}
+}
 
-	&__text {
-		margin: 0 0 24px;
+.feedback-header__title {
+	margin: 0 0 26px;
 
-		@include text-font;
-		line-height: 24px;
-		font-family: $main-font-family;
-		text-transform: $text-transform;
+	@include h-font;
+	font-family: $bold-font-family;
+	text-transform: $h-text-transform;
+
+	color: $h-color;
+
+	@media #{$tablet} {
+		margin: 0 0 31px;
+
+		font-size: 30px;
+	}
+}
+
+.feedback-header__text {
+	margin: 0 0 36px;
+
+	@include text-font;
+	line-height: 24px;
+	font-family: $main-font-family;
+	text-transform: $text-transform;
+
+	@media #{$tablet} {
+	    margin: 0 0 73px;
 	}
 }

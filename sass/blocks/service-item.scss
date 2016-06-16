@@ -11,7 +11,7 @@
 	&--white {
 		margin-bottom: 28px;
 		padding: $mobile-padding;
-		padding-left: calc(6.25% + 50px);
+		padding-left: 70px;
 
 		@media #{$tablet} {
 			padding: 125px 5% 0;
@@ -29,25 +29,27 @@
 				order: 2;
 			}
 		}
+
+		@media #{$desktop} {
+			padding: 125px 50px 0;
+		}
 	}
 
 	&--gray {
-		padding: 0 16px;
-		padding-top: 26px;
-		padding-bottom: 26px;
+		padding: 26px 16px;
 
 		text-align: center;
 
 		border-bottom: 1px solid #d6d6d6;
 
 		@media #{$tablet} {
-			padding: 44px 7% 23px;
+			padding: 44px 5% 23px;
 
 			border-bottom: none;
 		}
 
 		@media #{$desktop} {
-			padding: 44px 7% 63px;
+			padding: 44px 63px 63px;
 		}
 	}
 
@@ -62,7 +64,6 @@
 	margin: 0 0 14px;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $h-text-transform;
 
 	color: $h-color;
@@ -99,7 +100,7 @@
 	}
 
 	&--house::before {
-		background: url("../../img/icon-house.svg") no-repeat;
+		background: url("../img/icon-house.svg") no-repeat;
 		background-size: 40px 38px;
 
 		@media #{$tablet} {
@@ -108,7 +109,7 @@
 	}
 
 	&--souvenir::before {
-		background: url("../../img/icon-gift.svg") no-repeat;
+		background: url("../img/icon-gift.svg") no-repeat;
 		background-size: 38px 38px;
 
 		@media #{$tablet} {
@@ -117,7 +118,7 @@
 	}
 
 	&--food::before {
-		background: url("../../img/icon-burger.svg") no-repeat;
+		background: url("../img/icon-burger.svg") no-repeat;
 		background-size: 36px 46px;
 
 		@media #{$tablet} {
@@ -129,7 +130,7 @@
 		margin-bottom: 9px;
 
 		@media #{$desktop} {
-			padding: 0 16%;
+			padding: 0 60px;
 		}
 	}
 }
@@ -137,7 +138,5 @@
 .service-item__text {
 	margin: 0;
 
-	@include text-font;
-	font-family: $main-font-family;
 	text-transform: $text-transform;
 }

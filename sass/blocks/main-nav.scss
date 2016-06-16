@@ -25,14 +25,14 @@
 	&:first-child::after {
 		position: absolute;
 		top: 50%;
-		right: 6.25%;
+		right: 20px;
 		z-index: 2;
 		content: "";
 
 		width: 24px;
 		height: 24px;
 			
-		background: url("../../img/icon-cross.svg") no-repeat;
+		background: url("../img/icon-cross.svg") no-repeat;
 
 		transform: translate(0,-50%);
 
@@ -58,7 +58,9 @@
 }
 
 .main-nav__link {
-	font: bold 18px/40px $main-font-family;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
 
@@ -74,13 +76,13 @@
 
 .main-nav__toggle {
 	float: right;
-	margin: 17px 6.25% 17px 0;
+	margin: 17px 20px 17px 0;
 	width: 23px;
 	height: 22px;
 
 	font-size: 0;
 
-	background: url("../../img/icon-menu.svg") 0 0 no-repeat;
+	background: url("../img/icon-menu.svg") 0 0 no-repeat;
 	border: none;
 
 	outline: none;

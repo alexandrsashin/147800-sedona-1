@@ -1,19 +1,18 @@
 .intro {
-	padding: $mobile-padding;
-	padding: 0 calc(6.25% + 5px);
+	padding: 0 24px;
 
 	text-align: center;
 
 	@media #{$tablet} {
-		padding: 36px 15% 41px;
+		padding: 36px 22% 41px;
 	}
 
 	@media #{$desktop} {
-		padding: 76px 28% 43px;
+		padding: 76px 381px 43px;
 	}
 
 	&--index {
-		padding-bottom: 18px;
+		padding: 0 25px 18px;
 
 		@media #{$tablet} {
 			padding: 10px 15% 25px;
@@ -29,7 +28,6 @@
 	margin: 0 0 28px;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $h-text-transform;
 
 	color: $h-color;
@@ -52,8 +50,6 @@
 .intro__text {
 	margin: 0 0 25px;
 
-	@include text-font;
-	font-family: $main-font-family;
 	line-height: 26px;
 	text-transform: $text-transform;
 }

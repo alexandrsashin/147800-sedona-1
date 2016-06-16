@@ -4,7 +4,11 @@
 	text-align: center;
 
 	@media #{$tablet} {
-	    padding-top: 38px;
+	    padding: 38px 162px 0;
+	}
+
+	@media #{$desktop} {
+		padding: 74px 380px 0;
 	}
 }
 
@@ -12,7 +16,6 @@
 	margin: 0 0 26px;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $h-text-transform;
 
 	color: $h-color;
@@ -27,12 +30,14 @@
 .feedback-header__text {
 	margin: 0 0 36px;
 
-	@include text-font;
 	line-height: 24px;
-	font-family: $main-font-family;
 	text-transform: $text-transform;
 
 	@media #{$tablet} {
 	    margin: 0 0 73px;
+	}
+
+	@media #{$desktop} {
+		margin: 0 0 59px;
 	}
 }

@@ -40,7 +40,7 @@
 	width: 20px;
 	height: 20px;
 
-	background: url("../../img/icon-video-replay.svg") no-repeat;
+	background: url("../img/icon-video-replay.svg") no-repeat;
 	background-size: 20px 20px;
 	border: none;
 
@@ -93,10 +93,11 @@
 
 	display: block;
 	order: 3;
+    margin-left: auto;
 	width: 32px;
 	height: 20px;
 
-	background: url("../../img/icon-video-subtitles.svg") no-repeat;
+	background: url("../img/icon-video-subtitles.svg") no-repeat;
 	background-size: 32px 20px;
 	border: none;
 
@@ -114,7 +115,7 @@
 	width: 20px;
 	height: 20px;
 
-	background: url("../../img/icon-video-fullscreen.svg") no-repeat;
+	background: url("../img/icon-video-fullscreen.svg") no-repeat;
 	background-size: 20px 20px;
 	border: none;
 }

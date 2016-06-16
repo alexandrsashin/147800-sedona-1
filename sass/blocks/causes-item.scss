@@ -29,13 +29,16 @@
 		padding: 0 6%;
 		width: calc(100% / 3);
 	}
+
+	@media #{$desktop} {
+		padding: 0 5%;
+	}
 }
 
 .causes-item__title {
 	margin: 0 0 10px;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $h-text-transform;
 
 	@media #{$tablet} {
@@ -53,8 +56,6 @@
 .causes-item__number {
 	margin: 0 0 16px;
 
-	@include text-font;
-	font-family: $main-font-family;
 	text-transform: $text-transform;
 
 	@media #{$tablet} {
@@ -65,9 +66,13 @@
 .causes-item__text {
 	margin: 0 0 37px;
 
-	@include text-font;
-	font-family: $main-font-family;
 	text-transform: $text-transform;
+
+	&--2 {
+		@media #{$desktop} {
+			margin: 0 8% 37px;
+		}
+	}
 }
 
 .causes-item__img {
@@ -79,12 +84,12 @@
 	}
 
 	&--1 {
-		background: $main-background url("../../img/photo-city@1x.jpg") 51% bottom no-repeat;
+		background: $main-background url("../img/photo-city@1x.jpg") 51% bottom no-repeat;
 		background-size: auto 100%;
 	}
 
 	&--2 {
-		background: $main-background url("../../img/photo-bridge@1x.jpg") 51% bottom no-repeat;
+		background: $main-background url("../img/photo-bridge@1x.jpg") 51% bottom no-repeat;
 		background-size: auto 100%;
 	}
 }

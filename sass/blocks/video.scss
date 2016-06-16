@@ -20,7 +20,6 @@
 	margin: 0 0 26px;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $h-text-transform;
 
 	color: $h-color;
@@ -33,16 +32,18 @@
 }
 
 .video__text {
-	padding: $mobile-padding;
+	padding: 0 21px;
 	margin: 0 0 33px;
 
-	@include text-font;
 	line-height: 24px;
-	font-family: $main-font-family;
 	text-transform: $text-transform;
 
 	@media #{$tablet} {
-		margin: 0 0 73px;
+		margin: 0 20% 73px;
+	}
+
+	@media #{$desktop} {
+		margin: 0 358px 73px;
 	}
 }
 
@@ -71,7 +72,6 @@
 
 	@media #{$desktop} {
 		margin: 0 auto;
-
 		width: calc(100% / 3 *2);
 		min-height: 500px;
 	}

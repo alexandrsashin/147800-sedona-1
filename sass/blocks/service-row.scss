@@ -14,11 +14,13 @@
 
 	&--gray {
 		padding: $mobile-padding;
-		padding-top: 0;
-		padding-bottom: 0;
 
 		background: #eee;
 		border-top: 1px solid #eee;
 		border-bottom: 1px solid #eee;
+
+		@media #{$tablet} {
+			padding: 0;
+		}
 	}
 }

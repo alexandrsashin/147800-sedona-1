@@ -1,9 +1,7 @@
 .gallery-group {
-	display: flex;
-	flex-direction: column;
 
 	@media #{$tablet} {
-		flex-direction: row;
+		display: flex;
     	flex-wrap: wrap;
 		padding: $tablet-padding;
 	}
@@ -65,11 +63,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 0;
-		padding-top: 12px;
-    	padding-left: 19px;
-    	padding-right: 21px;
-    	padding-bottom: 7px;
-
+		padding: 12px 21px 7px 19px;
 		width: 100%;
 		box-sizing: border-box;
 
@@ -100,7 +94,9 @@
 	margin: 0;
 	padding-top: 4px;
 
-	font: 14px/24px $bold-font-family;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
 	text-transform: $photo-h-transform;
 		
 	color: $h-color;
@@ -113,7 +109,8 @@
 .gallery-group__item-author {
 	margin: 0 0 9px;
 
-	font: 14px/24px $main-font-family;
+	font-size: 14px;
+	line-height: 24px; 
 	text-transform: $photo-text-transform;
 
 	color: $main-color;
@@ -128,7 +125,9 @@
 
 	padding-left: 36px;
 
-	font: 14px/24px $bold-font-family;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
 		
 	color: $h-color;
 
@@ -142,7 +141,7 @@
 		width: 22px;
 		height: 22px;
 
-		background: url("../../img/icon-like.svg") no-repeat;
+		background: url("../img/icon-like.svg") no-repeat;
 		background-size: 22px 22px;
 	}
 

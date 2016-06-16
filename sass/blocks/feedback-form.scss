@@ -1,15 +1,28 @@
 .feedback-form {
-	display: flex;
-	flex-direction: column;
 
 	@media #{$tablet} {
-		flex-direction: row;
+		display: flex;
 		flex-wrap: wrap;
-		padding: $tablet-padding;
 	}
 
 	@media #{$desktop} {
-		padding: $desktop;
+		
+	}
+}
+
+.feedback-form__hidden-tablet {
+	@media #{$tablet} {
+		display: none;
+	}
+
+	@media #{$desktop} {
+		display: inline;
+	}
+}
+
+.feedback-form__hidden-desktop {
+	@media #{$desktop} {
+		display: none;
 	}
 }
 
@@ -50,11 +63,16 @@
 			
 	&--person {
 		@media #{$tablet} {
+			padding: 0 62px 0 54px;
 			order: 2;
 			width: 50%;
 			box-sizing: border-box;
 
 			border: none;
+		}
+
+		@media #{$desktop} {
+			padding: 0 120px 0 80px;
 		}
 	}
 
@@ -62,10 +80,17 @@
 		@media #{$tablet} {
 			flex-direction: row;
 			order: 3;
+			margin: $tablet-padding;
+		    padding: 28px 0 6px;
 			width: 100%;
 			box-sizing: border-box;
 
 			border-top: 1px solid $h-line-color;
+		}
+
+		@media #{$desktop} {
+			margin: $desktop-padding;
+			padding: 42px 0 6px;
 		}
 	}
 
@@ -75,40 +100,55 @@
 			justify-content: center;
 			align-items: center;
 			align-content: stretch;
+			margin: $tablet-padding;
 			width: 100%;
 			box-sizing: border-box;
 
 			border-top: 1px solid $h-line-color;
 		}
+
+		@media #{$desktop} {
+			margin: $desktop-padding;
+		}
 	}
 
 	&--radio {
 		@media #{$tablet} {
+		    padding-left: 56px;
+		    padding-right: 5px;
 			order: 1;
 			width: 50%;
 			box-sizing: border-box;
 
 			border: none;
 		}
+
+		@media #{$desktop} {
+			padding-left: 120px;
+		}
 	}
 
 	&--textarea {
 		@media #{$tablet} {
 			order: 5;
+			margin: $tablet-padding;
 			width: 100%;
 			box-sizing: border-box;
 
 			border-top: 1px solid $h-line-color;
 		}
+
+		@media #{$desktop} {
+			margin: $desktop-padding;
+		}
 	}
 }
 
 .feedback-form__title {
-	margin: 0 0 27px;
+	margin: 0;
 	width: 100%;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $h-text-transform;
 	text-align: center;
 
@@ -121,16 +161,47 @@
 		font-size: 21px;
 	}
 
-	&--radio,
+	@media #{$desktop} {
+		width: 41%;
+	}
+
 	&--person {
 		@media #{$tablet} {
+			margin-bottom: 58px;
 			width: 100%;
+
+			text-align: left;
+		}
+	}
+
+	&--radio {
+		@media #{$tablet} {
+			margin-bottom: 61px;
+			width: 100%;
+
+			text-align: left;
+		}
+
+		@media #{$desktop} {
+			margin: 0 0 75px 77px;
 		}
 	}
 }
 
 .feedback-form__group {
-	padding-bottom: 5px;
+	padding-bottom: 20px;
+
+	&--contacts {
+		@media #{$tablet} {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		@media #{$desktop} {
+			padding-bottom: 24px;
+		}
+	}
 
 	&--sights {
 		display: flex;
@@ -142,10 +213,16 @@
 			justify-content: center;
 			flex-wrap: wrap;
 			margin: 0 auto;
-			width: 80%;
+			padding: 54px 0 32px;
+			width: 83%;
 			box-sizing: border-box;
 
 			text-align: center;
+		}
+
+		@media #{$desktop} {
+			justify-content: space-between;
+			width: 100%;
 		}
 	}
 }
@@ -161,16 +238,22 @@
 
 	&--contacts {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
 
 		@media #{$desktop} {
 			flex-direction: row;
+		    align-items: flex-end;
 			width: 50%;
 		}
 	}
 
 	&--radio {
-		margin: 23px 0 29px;
+		margin: 13px 0 42px 0;
+
+		@media #{$tablet} {
+			margin: 13px 0 52px 0;
+		}
 
 		@media #{$desktop} {
 			margin: 0 0 53px;
@@ -182,28 +265,58 @@
 	}
 
 	&--sights {
-		/*@media #{$tablet} {
-			width: calc(100% / 2);
+		@media #{$tablet} {
+			padding-left: 30px;
+			width: 50%;
+			box-sizing: border-box;
+
+			&:first-child {
+				order:-3;
+			}
+
+			&:nth-child(2) {
+				order: -1;
+			}
+
+			&:nth-child(3) {
+				order: -2;
+			}
 		}
 
 		@media #{$desktop} {
-			width: 25%;
-		}*/
+			padding-left: 0;
+			width: 200px;
+		}
 	}
 }
 
 .feedback-form__field-error {
 	display: block;
+	padding-top: 5px;
+	padding-left: 21px;
 	width: 100%;
+    box-sizing: border-box;
 
-	@include text-font;
 	line-height: 26px;
-	font-family: $main-font-family;
 
 	color: $error-color;
 
 	@media #{$tablet} {
+		order: -1;
+		display: inline-block;
+		margin: 0;
+    	padding: 0;
 		width: 50%;
+
+		text-align: right;
+	}
+
+	@media #{$desktop} {
+	    margin-left: 110px;
+	    margin-bottom: 6px;
+		width: 100%;
+
+		text-align: left;
 	}
 }
 
@@ -211,10 +324,13 @@
 	position: relative;
 
 	padding-right: 19px;
+	box-sizing: border-box;
 
-	@include text-font;
-	font-family: $main-font-family;
 	text-transform: $text-transform;
+
+	&--person {
+		padding-top: 20px;
+	}
 
 	&--radio,
 	&--checkbox {
@@ -222,10 +338,19 @@
 		padding-right: 0;
 
 		@include h-font;
-		font-family: $bold-font-family;
 		text-transform: $label-text-transform;
 
 		color: $h-color;
+	}
+
+	&--radio {
+		@media #{$tablet} {
+			margin-bottom: 0;
+		}	
+	}
+
+	&--checkbox {
+		margin: 4px 0 31px;
 	}
 
 	&--radio::before {
@@ -262,16 +387,29 @@
 		position: relative;
 
 		display: block;
-		margin: 8px 0 15px;
+		margin-bottom: 10px;
+		padding-left: 22px;
+		width: 100%;
+
+		@media #{$tablet} {
+			display: inline-block;
+			order: -2;
+			width: 50%;
+		}
 
 		@media #{$desktop} {
-			display: inline;
+			order: 0;
+			display: block;
+			margin: 0;
+			padding-bottom: 16px;
+			padding-left: 6px;
+			width: auto;
 		}
 	}
 
 	&--phone::after {
 		position: absolute;
-		top: 36px;
+	    top: 31px;
 		right: 0;
 		z-index: 5;
 		content: "";
@@ -282,22 +420,36 @@
 		background: url("../../img/icon-phone.svg") center no-repeat,
 			$input-add-background;
 		background-size: 18px 18px, 100%;
+
+		@media #{$tablet} {
+			right: -100%;
+		}
+
+		@media #{$desktop} {
+			top: -21px;
+			left: 348px;
+		}
 	}
 
 	&--email {
 		position: relative;
 
 		display: block;
-		margin: 0 0 15px;
+		margin: 0 0 10px;
+		padding-left: 22px;
+	    width: 100%;
 
 		@media #{$desktop} {
-			display: inline;
+			margin: 0;
+			padding-left: 0;
+		    padding-bottom: 20px;
+			width: auto;
 		}
 	}
 
 	&--email::after {
 		position: absolute;
-		top: 36px;
+		top: 31px;
 		right: 0;
 		z-index: 5;
 		content: "";
@@ -310,20 +462,18 @@
 		background-size: 16px 16px, 100%;
 
 		@media #{$desktop} {
-			    top: -21px;
-    			right: -319px;
+			        top: -17px;
+    				right: -316px;
 		}
 	}
 }
 
 .feedback-form__input {
-	display: flex;
-	flex: 1;
-	padding: 16px;
+	padding: 16px 20px 16px;
+	width: 100%;
 	box-sizing: border-box;
 
 	@include h-font;
-	font-family: $bold-font-family;
 	text-transform: $label-text-transform;
 
 	background: $input-background;
@@ -335,7 +485,6 @@
 
 	&::-webkit-input-placeholder {
 		@include h-font;
-		font-family: $bold-font-family;
 		text-transform: $label-text-transform;
 
 		color: $h-color;
@@ -346,7 +495,6 @@
 
 	&::-moz-placeholder {
 		@include h-font;
-		font-family: $bold-font-family;
 		text-transform: $label-text-transform;
 
 		color: $h-color;
@@ -357,7 +505,6 @@
 
 	&:-moz-placeholder {
 		@include h-font;
-		font-family: $bold-font-family;
 		text-transform: $label-text-transform;
 
 		color: $h-color;
@@ -368,7 +515,6 @@
 
 	&:-ms-input-placeholder {
 		@include h-font;
-		font-family: $bold-font-family;
 		text-transform: $label-text-transform;
 
 		color: $h-color;
@@ -398,21 +544,21 @@
 	}
 
 	&--phone {
-		margin: 0 0 50px;
 		padding-right: 58px;
 		width: 100%;
 
 		@media #{$desktop} {
-			width: 60%;
+			width: 66%;
 		}
 	}
 
 	&--email {
-		margin: 0 0 23px;
+		margin: 0 0 7px;
 		width: 100%;
 
 		@media #{$desktop} {
-			width: 60%;
+			margin: 0;
+			width: 66%;
 		}
 	}
 
@@ -449,7 +595,7 @@
 		width: 56px;
 		height: 56px;
 
-		background-image: url("../../img/icon-tick.svg");
+		background-image: url("../img/icon-tick.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 22px 22px;
@@ -460,6 +606,10 @@
 		width: 100%;
 
 		resize: none;
+
+		@media #{$tablet} {
+			margin: 60px 0 51px;
+		}
 	}
 }
 
@@ -472,8 +622,14 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		margin: $tablet-padding;
 		padding: 0;
 		width: 100%;
+	}
+
+	@media #{$desktop} {
+		margin: $desktop-padding;
+		margin-bottom: 64px;
 	}
 }
 
@@ -483,19 +639,23 @@
 	@media #{$tablet} {
 		width: 50%;
 	}
+
+	@media #{$desktop} {
+		font-size: 21px;
+	}
 }
 
 .feedback-form__submit-comment {
 	display: none;
 
-	@include text-font;
 	line-height: 26px;
 	text-transform: uppercase; 
 
 	color: #333;
 
 	@media #{$tablet} {
-		display: flex;
+		display: block;
+	    padding-top: 16px;
 		width: 50%;
 
 		text-align: right;

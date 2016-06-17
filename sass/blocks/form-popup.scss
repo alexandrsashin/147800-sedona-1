@@ -1,6 +1,6 @@
 .form-popup {
 	padding-top: 50px;
-	@include box-sizing;
+	box-sizing: border-box;
 
 	text-align: center;
 
@@ -24,38 +24,35 @@
 			width: 640px;
 		}
 	}
+}
 
-	&__title {
-		margin: $mobile-padding;;
-		margin: 0 0 40px;
+.form-popup__title {
+	margin: $mobile-padding;;
+	margin: 0 0 40px;
 
-		@include h-font;
-		font-family: $bold-font-family;
-		text-transform: $h-text-transform;
+	@include h-font;
+	text-transform: $h-text-transform;
 
-		color: $h-color;
-	}
+	color: $h-color;
+}
 
-	&__text {
-		margin: $mobile-padding;
-		margin-bottom: 30px;
+.form-popup__text {
+	margin: $mobile-padding;
+	margin-bottom: 30px;
 
-		@include text-font;
-		font-family: $main-font-family;
-		line-height: 24px;
-		text-transform: $text-transform;
-	}
+	line-height: 24px;
+	text-transform: $text-transform;
+}
 
-	&__footer {
-		margin-top: 10px;
-		padding: $mobile-padding;;
-		padding-top: 20px;
-		padding-bottom: 20px;
+.form-popup__footer {
+	margin-top: 10px;
+	padding: 20px;
 
-		background: $input-background;
-	}
+	background: $input-background;
+}
 
-	&__btn--failure {
+.form-popup__btn {
+	&--failure {
 		width: 180px;
 	}
 

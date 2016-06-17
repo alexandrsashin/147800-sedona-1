@@ -1,9 +1,7 @@
 .site-wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
-	@include box-sizing;
-
-	font: 14px/21px $main-font-family;
+	box-sizing: border-box;
 
 	background: $main-background;
 	color: $main-color;

@@ -1,35 +1,32 @@
 .page-slogan {
 	min-height: 158px; 
 
-	background: url("../../img/text-sedona.svg") center 52px no-repeat,
-			url("../../img/bg-intro-triangle-mobile.svg") center bottom no-repeat,
-			$main-background url("../../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
-	-webkit-background-size: 230px 38px,
-			contain,
-			auto;
-	background-size: 230px 38px,
-			contain,
-			auto;	
+	background: url("../img/text-sedona.svg") center 52px no-repeat,
+			url("../img/bg-intro-triangle-mobile.svg") center bottom no-repeat,
+			$main-background url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+	background-size: 230px 38px, contain, auto;	
+
+	@media #{$tablet} {
+		min-height: 289px;
+	}
+
+	@media #{$desktop} {
+		min-height: 300px;
+	}
 
 	&--index {
 		min-height: 389px;
 
-		background: url("../../img/text-sedona-index.svg") center 93px no-repeat,
-			url("../../img/bg-intro-triangle-mobile.svg") center bottom no-repeat,
-			$main-background url("../../img/bg-back-mobile@1x.jpg") center bottom no-repeat;;
-		-webkit-background-size: 230px 38px,
-			contain,
-			auto;
-		background-size: 280px 208px,
-			contain,
-			auto;
+		background-size: 280px 208px, contain, auto;
 
 		@media #{$tablet} {
 			min-height: 518px;
 
-			background-size: 462px 350px,
-				contain,
-				auto;
+			background: url("../img/text-sedona-index.svg") center 93px no-repeat,
+				url("../img/bg-intro-triangle-mobile.svg") center bottom no-repeat,
+				url("../img/bg-triangle.svg") center bottom no-repeat,
+				$main-background url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+			background-size: 462px 350px, 712px, 768px, auto;
 		}
 	}			
 }

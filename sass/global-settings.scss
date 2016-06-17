@@ -1,4 +1,14 @@
 body {
 	padding: 0;
-	background: $overflow-background !important;
+
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	font-family: "PT Sans", "Arial", sans-serif;
+
+	background: $overflow-background;
+}
+
+p {
+	word-break: break-word;
 }

@@ -1,41 +1,44 @@
 .page-footer {
-	padding: 31px 0 36px;
+	display: flex;
+    flex-direction: column;
+
+	padding: 26px 0 22px;
 
 	text-align: center;
 
 	background: #fefefe;
 
 	@media #{$tablet} {
-		@include clearfix();
+		flex-direction: row;
 
 		padding: 36px 0 0;
 		min-height: 120px;
-		@include box-sizing;
+		box-sizing: border-box;
 	}
+}
 
-	&__hashtag {
-		display: block;
-		margin: 0 0 42px;
+.page-footer__hashtag {
+	display: block;
+	margin: 0 0 36px;
 
-		font: 21px/26px $bold-font-family;
-		text-transform: uppercase;
-		text-decoration: none;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
 
-		color: #000;
+	color: #000;
 
-		@media #{$tablet} {
-			float: left;
-			margin: 15px 0 0;
-			width: calc(100% / 3);
-		}
+	@media #{$tablet} {
+		margin: 10px 0 0;
+		width: calc(100% / 3);
 	}
+}
 
-	&__social {
-		margin: 0 0 51px;
+.page-footer__social {
+	margin: 0 0 40px;
 
-		@media #{$tablet} {
-			float: left;
-			width: calc(100% / 3);
-		}
+	@media #{$tablet} {
+		width: calc(100% / 3);
 	}
 }

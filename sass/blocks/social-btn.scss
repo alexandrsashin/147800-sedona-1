@@ -7,31 +7,54 @@
 	
 	font-size: 0;
 
-	background: $text-background;
+	background: $social-btn-background;
 
 	&:last-child {
 		margin-right: 0;
 	}
 
 	&--twitter {
-		background-image: url("../img/icon-twitter.svg");
-		background-position: center;
-		background-size: 19px 19px;
-		background-repeat: no-repeat; 
+		margin: 15px auto 0;
+		width: 19px;
+		height: 19px;
+
+		fill: $social-btn-color;
+
+		&:active {
+			fill: $social-btn-color-active;
+		}
 	}
 
 	&--facebook {
-		background-image: url("../img/icon-facebook.svg");
-		background-position: center;
-		background-size: 19px 19px;
-		background-repeat: no-repeat; 
+		margin: 15px auto 0;
+		width: 19px;
+		height: 19px;
+
+		fill: $social-btn-color;
+
+		&:active {
+			fill: $social-btn-color-active;
+		}
 	}
 
 	&--youtube {
-		background-image: url("../img/icon-youtube.svg");
-		background-position: center;
-		background-size: 19px 19px;
-		background-repeat: no-repeat; 
+		margin: 15px auto 0;
+		width: 19px;
+		height: 19px;
+
+		fill: $social-btn-color;
+
+		&:active {
+			fill: $social-btn-color-active;
+		}
+	}
+
+	&:hover {
+		background: $social-btn-background-hover;
+	}
+
+	&:active {
+		background: $social-btn-background-active;
 	}
 }
 

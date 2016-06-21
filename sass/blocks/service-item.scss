@@ -14,7 +14,7 @@
 		padding-left: 70px;
 
 		@media #{$tablet} {
-			padding: 125px 5% 0;
+			padding: 125px 0 0;
 
 			text-align: center;
 			&:first-child {
@@ -43,7 +43,7 @@
 		border-bottom: 1px solid #d6d6d6;
 
 		@media #{$tablet} {
-			padding: 44px 5% 23px;
+			padding: 44px 0;
 
 			border-bottom: none;
 		}
@@ -69,61 +69,10 @@
 	color: $h-color;
 
 	@media #{$tablet} {
+		padding: 0 20%;
 		margin: 0 0 21px;
 
 		font-size: $h-table-font-size;
-	}
-
-	&::before {
-		position: absolute;
-		top: -11px;
-		left: 0;
-		z-index: 3;
-		content: "";
-				
-		margin-left: -30px;
-		width: 40px;
-		height: 40px;
-
-		transform: translate(-50%,0);
-
-		@media #{$tablet} {
-			top: -60px;
-			left: 50%;
-
-			margin-left: -40px;
-			width: 80px;
-			height: 80px;
-
-			transform: translate(0,-50%);
-		}
-	}
-
-	&--house::before {
-		background: url("../img/icon-house.svg") no-repeat;
-		background-size: 40px 38px;
-
-		@media #{$tablet} {
-			background-size: 80px 75px;
-		}
-	}
-
-	&--souvenir::before {
-		background: url("../img/icon-gift.svg") no-repeat;
-		background-size: 38px 38px;
-
-		@media #{$tablet} {
-			background-size: 76px 74px;
-		}
-	}
-
-	&--food::before {
-		background: url("../img/icon-burger.svg") no-repeat;
-		background-size: 36px 46px;
-
-		@media #{$tablet} {
-			background-size: 76px 78px;
-		}
 	}
 
 	&--gray {
@@ -135,8 +84,74 @@
 	}
 }
 
+.service-item__img {
+	position: absolute;
+	top: -11px;
+	left: 0;
+	z-index: 3;
+	content: "";
+				
+	margin-left: -30px;
+	width: 40px;
+	height: 40px;
+
+	fill: #81b3d2;
+
+	transform: translate(-50%,0);
+
+	@media #{$tablet} {
+		top: -64px;
+		left: 50%;
+
+		margin-left: -40px;
+		width: 80px;
+		height: 80px;
+
+		transform: translate(0,-50%);
+	}
+
+	&--house {
+		width: 40px;
+		height: 38px;
+
+		@media #{$tablet} {
+			width: 80px;
+			height: 75px;
+		}
+	}
+
+	&--souvenir {
+		width: 38px;
+		height: 38px;
+
+		@media #{$tablet} {
+			width: 76px;
+			height: 74px;
+		}
+	}
+
+	&--food {
+		width: 36px;
+		height: 46px;
+
+		@media #{$tablet} {
+			width: 76px;
+			height: 78px;
+		}
+	}
+}
+
 .service-item__text {
 	margin: 0;
 
 	text-transform: $text-transform;
+
+	@media #{$tablet} {
+		margin: 0 auto;
+		width: 64%;
+	}
+
+	@media #{$desktop} {
+		width: 100%;
+	}
 }

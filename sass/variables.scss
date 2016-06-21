@@ -11,20 +11,51 @@ $photo-h-transform: uppercase;
 $photo-text-transform: none;
 
 $main-background: #fff;
-$btn-background: #81b3d2;
 $text-background: #81b3d2;
-$input-background: #f2f2f2;
-$input-add-background: #e6e6e6;
 $overflow-background: #f2f2f2;
 $photo-descr-background: #f2f2f2;
 $photo-descr-desktop-background: rgba(0,0,0,0.3);
 $h-line-color: #e5e5e5;
 $main-color: #333;
 $h-color: #000;
-$btn-color: #fff;
 $text-color: #fff;
 $photo-descr-desktop-color: #fff;
 $error-color: #ff5c5c;
 
+$main-nav-link: #000;
+$main-nav-link-hover: #81b3d2;
+$main-nav-link-active: rgba(0,0,0,0.3);
+
+$main-nav-link-current: #766357;
+$main-nav-link-current-hover: #604e43;
+$main-nav-link-current-active: rgba(118,99,87,0.3);
+
+$btn-background: #81b3d2;
+$btn-background-hover: #669ec0;
+$btn-background-active: #5496bd;
+$btn-background-disabled: #e5e5e5;
+$btn-color: #fff;
+$btn-color-active: rgba(255,255,255,0.3);
+
+$social-btn-background: #81b3d2;
+$social-btn-background-hover: #669ec0;
+$social-btn-background-active: #5496bd;
+$social-btn-color: #fff;
+$social-btn-color-active: rgba(255,255,255,0.3);
+
+$htmlacademy-logo-color: #000;
+$htmlacademy-logo-color-hover: #81b3d2;
+$htmlacademy-logo-color-active: rgba(0,0,0,0.3);
+
+$input-background: #f2f2f2;
+$input-background-hover: #e5e5e5;
+$input-background-focus: #fff;
+$input-background-radio-checkbox-focus: #d5d5d5;
+$input-add-background: #e6e6e6;
+$input-tick-color: #333;
+$input-tick-color-focus: rgba(51,51,51,0.3);
+
+$mobile: "(max-width: 320px)";
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1200px)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

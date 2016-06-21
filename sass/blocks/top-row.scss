@@ -1,6 +1,9 @@
 .top-row {
 	position: relative;
 
+	display: flex;
+    justify-content: flex-end;
+
 	min-height: 56px;
 	box-sizing: border-box;
 

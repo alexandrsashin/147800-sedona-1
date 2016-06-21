@@ -1,10 +1,30 @@
 .map {
+	position: relative;
+
 	margin-bottom: 10px;
 	min-height: 350px;
 
-	background: $main-background url("../img/bg-map-mobile@1x.jpg") no-repeat;
+	background: $main-background url("../img/bg-map-tablet@1x.jpg") 50% no-repeat;
+	background-size: cover; 
+
+	@media #{$mobile} {
+		background: $main-background url("../img/bg-map-mobile@1x.jpg") 50% no-repeat;
+	}
 
 	@media #{$tablet} {
 		margin-bottom: 0;
+
+		background: $main-background url("../img/bg-map-desktop@1x.jpg") 50% no-repeat;
 	}
+}
+
+.map__marker {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+
+	width: 27px;
+	height: 27px;
+
+	transform: translate(-50%,-50%);
 }

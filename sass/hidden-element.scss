@@ -25,3 +25,19 @@
 		display: none;
 	}
 }
+
+.hidden-element__mobile-tablet {
+	display: none;
+
+	@media #{$desktop} {
+		display: inline;
+	}
+}
+
+.hidden-element__tablet-desktop {
+	display: inline;
+
+	@media #{$tablet} {
+		display: none;
+	}
+}

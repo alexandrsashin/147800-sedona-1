@@ -38,11 +38,31 @@
 	width: 16px;
 	height: 20px;
 
+	fill: $video-controls-color;
+
+	&:hover {
+		fill: $video-controls-hover-color;
+	}
+
+	&:active {
+		fill: $video-controls-active-color;
+	}
+
 	@media #{$tablet} {
 		order: 1;
 
 		margin-left: 8px;
 	    margin-right: 43px;
+
+	    fill: $video-controls-main-color;
+
+	    &:hover {
+	    	fill: $video-controls-main-hover-color;
+	    }
+
+	    &:active {
+	    	fill: $video-controls-main-color;
+	    }
 	}
 }
 
@@ -89,8 +109,28 @@
 	width: 32px;
 	height: 20px;
 
+	fill: $video-controls-color;
+
+	&:hover {
+		fill: $video-controls-hover-color;
+	}
+
+	&:active {
+		fill: $video-controls-active-color;
+	}
+
 	@media #{$tablet} {
 		margin-left: 61px;
+
+		fill: $video-controls-main-color;
+
+	    &:hover {
+	    	fill: $video-controls-main-hover-color;
+	    }
+
+	    &:active {
+	    	fill: $video-controls-main-color;
+	    }
 	}
 }
 
@@ -100,4 +140,26 @@
 	margin-left: 31px;
 	width: 20px;
 	height: 20px;
+
+	fill: $video-controls-color;
+
+	&:hover {
+		fill: $video-controls-hover-color;
+	}
+
+	&:active {
+		fill: $video-controls-active-color;
+	}
+
+	@media #{$tablet} {
+		fill: $video-controls-main-color;
+
+	    &:hover {
+	    	fill: $video-controls-main-hover-color;
+	    }
+
+	    &:active {
+	    	fill: $video-controls-main-color;
+	    }
+	}
 }

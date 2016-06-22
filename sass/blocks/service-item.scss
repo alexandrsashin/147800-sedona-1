@@ -9,12 +9,15 @@
 	}
 
 	&--white {
-		margin-bottom: 28px;
+		flex-direction: row;
+		margin-bottom: 18px;
 		padding: $mobile-padding;
-		padding-left: 70px;
+		padding-left: 20px;
 
 		@media #{$tablet} {
-			padding: 125px 0 0;
+			flex-direction: column;
+			margin-bottom: 48px;
+			padding: 22px 0 0;
 
 			text-align: center;
 			&:first-child {
@@ -31,7 +34,7 @@
 		}
 
 		@media #{$desktop} {
-			padding: 125px 50px 0;
+			padding: 22px 50px 0;
 		}
 	}
 
@@ -61,7 +64,7 @@
 .service-item__title {
 	position: relative;
 
-	margin: 0 0 14px;
+	margin: 10px 0 14px;
 
 	@include h-font;
 	text-transform: $h-text-transform;
@@ -76,7 +79,7 @@
 	}
 
 	&--gray {
-		margin-bottom: 9px;
+		margin: 0 0 9px;
 
 		@media #{$desktop} {
 			padding: 0 60px;
@@ -85,33 +88,21 @@
 }
 
 .service-item__img {
-	position: absolute;
-	top: -11px;
-	left: 0;
-	z-index: 3;
-	content: "";
-				
-	margin-left: -30px;
+	margin-right: 14px;
 	width: 40px;
 	height: 40px;
 
 	fill: #81b3d2;
 
-	transform: translate(-50%,0);
-
 	@media #{$tablet} {
-		top: -64px;
-		left: 50%;
-
-		margin-left: -40px;
+		margin: 0 auto 25px;
+;
 		width: 80px;
 		height: 80px;
-
-		transform: translate(0,-50%);
 	}
 
 	&--house {
-		width: 40px;
+		width: 67px;
 		height: 38px;
 
 		@media #{$tablet} {
@@ -121,7 +112,7 @@
 	}
 
 	&--souvenir {
-		width: 38px;
+	    width: 67px;
 		height: 38px;
 
 		@media #{$tablet} {
@@ -131,12 +122,12 @@
 	}
 
 	&--food {
-		width: 36px;
-		height: 46px;
+		width: 67px;
+		height: 38px;
 
 		@media #{$tablet} {
 			width: 76px;
-			height: 78px;
+			height: 76px;
 		}
 	}
 }

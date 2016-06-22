@@ -386,14 +386,16 @@
 	&--radio::before,
 	&--checkbox::before {
 		background: $input-background;
+	}
 
-		&:hover {
-			background: $input-background-hover;
-		}
+	&--radio:hover::before,
+	&--checkbox:hover::before {
+		background: $input-background-hover;
+	}
 
-		&:active {
+	&--radio:active::before,
+	&--checkbox:active::before {
 			background: $input-background-radio-checkbox-focus;
-		}
 	}
 
 	&--phone {
@@ -636,9 +638,12 @@
 			height: 22px;
 			box-sizing: border-box;
 
-			background: #333;
-			border: 1px solid $input-background;
+			background: $input-tick-color;
 			border-radius: 50%;
+		}
+
+		&:checked + label:active::after {
+			background: $input-tick-color-focus;
 		}
 	}
 
@@ -657,6 +662,12 @@
 
 		width: 22px;
 		height: 22px;
+
+		fill: $input-tick-color;
+	}
+
+	&--checkbox:checked + label svg:active {
+		fill: $input-tick-color-focus;
 	}
 
 	&--textarea {

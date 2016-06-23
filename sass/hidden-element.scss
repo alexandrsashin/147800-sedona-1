@@ -41,3 +41,15 @@
 		display: none;
 	}
 }
+
+.hidden-element__mobile-desktop {
+	display: none;
+
+	@media #{$tablet} {
+		display: inline;
+	}
+
+	@media #{$desktop} {
+		display: none;
+	}
+}

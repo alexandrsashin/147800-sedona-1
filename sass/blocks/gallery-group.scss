@@ -152,4 +152,10 @@
 
 	width: 22px;
 	height: 20px;
+
+	fill: $likes-color-mobile;
+
+	@media #{$desktop} {
+		fill: $likes-color-desktop;
+	}
 }

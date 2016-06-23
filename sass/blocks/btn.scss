@@ -11,4 +11,17 @@
 	border: none;
 
 	outline: none;
+
+	&:hover {
+		background: $btn-background-hover;
+	}
+
+	&:active {
+		background: $btn-background-active;
+		color: $btn-color-active;
+	}
+
+	&:disabled {
+		background: $btn-background-disabled;
+	}
 }

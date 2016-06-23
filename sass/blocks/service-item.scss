@@ -9,12 +9,15 @@
 	}
 
 	&--white {
-		margin-bottom: 28px;
+		flex-direction: row;
+		margin-bottom: 18px;
 		padding: $mobile-padding;
-		padding-left: 70px;
+		padding-left: 20px;
 
 		@media #{$tablet} {
-			padding: 125px 5% 0;
+			flex-direction: column;
+			margin-bottom: 48px;
+			padding: 22px 0 0;
 
 			text-align: center;
 			&:first-child {
@@ -31,7 +34,7 @@
 		}
 
 		@media #{$desktop} {
-			padding: 125px 50px 0;
+			padding: 22px 50px 0;
 		}
 	}
 
@@ -43,7 +46,7 @@
 		border-bottom: 1px solid #d6d6d6;
 
 		@media #{$tablet} {
-			padding: 44px 5% 23px;
+			padding: 44px 0;
 
 			border-bottom: none;
 		}
@@ -61,7 +64,7 @@
 .service-item__title {
 	position: relative;
 
-	margin: 0 0 14px;
+	margin: 10px 0 14px;
 
 	@include h-font;
 	text-transform: $h-text-transform;
@@ -69,68 +72,62 @@
 	color: $h-color;
 
 	@media #{$tablet} {
+		padding: 0 20%;
 		margin: 0 0 21px;
 
 		font-size: $h-table-font-size;
 	}
 
-	&::before {
-		position: absolute;
-		top: -11px;
-		left: 0;
-		z-index: 3;
-		content: "";
-				
-		margin-left: -30px;
-		width: 40px;
-		height: 40px;
-
-		transform: translate(-50%,0);
-
-		@media #{$tablet} {
-			top: -60px;
-			left: 50%;
-
-			margin-left: -40px;
-			width: 80px;
-			height: 80px;
-
-			transform: translate(0,-50%);
-		}
-	}
-
-	&--house::before {
-		background: url("../img/icon-house.svg") no-repeat;
-		background-size: 40px 38px;
-
-		@media #{$tablet} {
-			background-size: 80px 75px;
-		}
-	}
-
-	&--souvenir::before {
-		background: url("../img/icon-gift.svg") no-repeat;
-		background-size: 38px 38px;
-
-		@media #{$tablet} {
-			background-size: 76px 74px;
-		}
-	}
-
-	&--food::before {
-		background: url("../img/icon-burger.svg") no-repeat;
-		background-size: 36px 46px;
-
-		@media #{$tablet} {
-			background-size: 76px 78px;
-		}
-	}
-
 	&--gray {
-		margin-bottom: 9px;
+		margin: 0 0 9px;
 
 		@media #{$desktop} {
 			padding: 0 60px;
+		}
+	}
+}
+
+.service-item__img {
+	margin-right: 14px;
+	width: 40px;
+	height: 40px;
+
+	fill: #81b3d2;
+
+	@media #{$tablet} {
+		margin: 0 auto 25px;
+;
+		width: 80px;
+		height: 80px;
+	}
+
+	&--house {
+		width: 67px;
+		height: 38px;
+
+		@media #{$tablet} {
+			width: 80px;
+			height: 75px;
+		}
+	}
+
+	&--souvenir {
+	    width: 67px;
+		height: 38px;
+
+		@media #{$tablet} {
+			width: 76px;
+			height: 74px;
+		}
+	}
+
+	&--food {
+		width: 67px;
+		height: 38px;
+
+		@media #{$tablet} {
+			width: 76px;
+			height: 76px;
 		}
 	}
 }
@@ -139,4 +136,13 @@
 	margin: 0;
 
 	text-transform: $text-transform;
+
+	@media #{$tablet} {
+		margin: 0 auto;
+		width: 64%;
+	}
+
+	@media #{$desktop} {
+		width: 100%;
+	}
 }

@@ -20,7 +20,7 @@
 
 		@media #{$retina} {
 			background: $main-background url("../img/bg-back-desktop@2x.jpg") center bottom no-repeat;
-			background-size: cover;
+			background-size: 1200px;
 		}
 	}
 
@@ -64,7 +64,7 @@
 		min-height: 389px;
 
 		@media #{$tablet} {
-			min-height: 518px;
+			min-height: 517px;
 		}
 	}			
 }

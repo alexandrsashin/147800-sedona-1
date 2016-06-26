@@ -63,6 +63,7 @@
 			
 	&--person {
 		@media #{$tablet} {
+			margin-bottom: 20px;
 			padding: 0 62px 0 54px;
 			order: 2;
 			width: 50%;
@@ -72,6 +73,7 @@
 		}
 
 		@media #{$desktop} {
+			margin-bottom: 14px;
 			padding: 0 120px 0 80px;
 		}
 	}
@@ -114,6 +116,7 @@
 
 	&--radio {
 		@media #{$tablet} {
+			margin-bottom: 20px;
 		    padding-left: 56px;
 		    padding-right: 5px;
 			order: 1;
@@ -124,11 +127,14 @@
 		}
 
 		@media #{$desktop} {
+			margin-bottom: 14px;
 			padding-left: 120px;
 		}
 	}
 
 	&--textarea {
+		padding-top: 16px;
+
 		@media #{$tablet} {
 			order: 5;
 			margin: $tablet-padding;
@@ -155,7 +161,7 @@
 	color: $h-color;
 
 	@media #{$tablet} {
-		width: 52%;
+		width: 62%;
 
 		@include h-font;
 		font-size: 21px;
@@ -214,7 +220,7 @@
 			flex-wrap: wrap;
 			margin: 0 auto;
 			padding: 54px 0 32px;
-			width: 83%;
+			width: 80%;
 			box-sizing: border-box;
 
 			text-align: center;
@@ -222,6 +228,7 @@
 
 		@media #{$desktop} {
 			justify-content: space-between;
+			padding-bottom: 22px;
 			width: 100%;
 		}
 	}
@@ -239,6 +246,7 @@
 	&--contacts {
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0 0 16px;
 		width: 100%;
 
 		@media #{$desktop} {
@@ -265,7 +273,16 @@
 	}
 
 	&--sights {
+		&:last-child {
+			margin: 0 0 10px;
+
+			@media #{$tablet} {
+				margin: 0 0 23px;
+			}
+		}
+
 		@media #{$tablet} {
+			margin: 0 0 23px;
 			padding-left: 30px;
 			width: 50%;
 			box-sizing: border-box;
@@ -417,7 +434,7 @@
 		@media #{$desktop} {
 			order: 0;
 			display: block;
-			margin: 0;
+			margin-bottom: 10px;
 			padding-bottom: 16px;
 			padding-left: 6px;
 			width: auto;
@@ -455,7 +472,7 @@
 	    width: 100%;
 
 		@media #{$desktop} {
-			margin: 0;
+			margin-bottom: 10px;
 			padding-left: 0;
 		    padding-bottom: 20px;
 			width: auto;
@@ -612,6 +629,10 @@
 		padding-right: 58px;
 		width: 100%;
 
+		@media #{$tablet} {
+			margin-bottom: 10px;
+		}
+
 		@media #{$desktop} {
 			width: 66%;
 		}
@@ -622,7 +643,7 @@
 		width: 100%;
 
 		@media #{$desktop} {
-			margin: 0;
+			margin-bottom: 10px;
 			width: 66%;
 		}
 	}
@@ -673,13 +694,13 @@
 	}
 
 	&--textarea {
-		margin: 0 0 51px;
+		margin: 0 0 44px;
 		width: 100%;
 
 		resize: none;
 
 		@media #{$tablet} {
-			margin: 60px 0 51px;
+			margin: 40px 0 51px;
 		}
 	}
 }
@@ -705,6 +726,10 @@
 		width: 100%;
 	}
 
+	@media #{$tablet} {
+		margin-bottom: 62px;
+	}
+
 	@media #{$desktop} {
 		margin: $desktop-padding;
 		margin-bottom: 64px;
@@ -713,6 +738,8 @@
 
 .feedback-form__submit-btn {
 	width: 100%;
+
+	font-size: 21px;
 
 	@media #{$tablet} {
 		width: 50%;

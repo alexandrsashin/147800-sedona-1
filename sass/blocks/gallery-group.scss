@@ -120,10 +120,8 @@
 	}
 }
 
-.gallery-group__item-likes {
-	position: relative;
-
-	padding-left: 36px;
+.gallery-group__item-likes {	
+	display: flex;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -133,8 +131,6 @@
 
 	@media #{$tablet} {
 		align-self: center;
-		padding-left: 3px;
-		width: 17%;
 
 		text-align: right;
 	}
@@ -145,11 +141,7 @@
 }
 
 .gallery-group__img-likes {
-	position: absolute;
-	bottom: 6px;
-	left: 0;
-	z-index: 3;
-
+	margin: 0 14px 0 0;
 	width: 22px;
 	height: 20px;
 

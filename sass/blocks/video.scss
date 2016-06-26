@@ -9,9 +9,13 @@
 
 	@media #{$tablet} {
 		padding-top: 67px;
-		padding-bottom: 35px;
+		padding-bottom: 40px;
 
 		border-top: none;
+	}
+
+	@media #{$desktop} {
+		padding-bottom: 86px;
 	}
 }
 

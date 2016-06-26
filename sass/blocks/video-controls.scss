@@ -51,8 +51,9 @@
 	@media #{$tablet} {
 		order: 1;
 
-		margin-left: 8px;
-	    margin-right: 43px;
+	    margin-right: 44px;
+	    width: 22px;
+	    height: 22px;
 
 	    fill: $video-controls-main-color;
 
@@ -100,6 +101,10 @@
 	border-radius: 50%;
 
 	transform: translate(0,-50%);
+
+	@media #{$tablet} {
+		left: 114px;
+	}
 }
 
 .video-controls__subtitles {
@@ -120,7 +125,9 @@
 	}
 
 	@media #{$tablet} {
-		margin-left: 61px;
+		margin-left: 40px;
+		width: 50px;
+		height: 20px;
 
 		fill: $video-controls-main-color;
 
@@ -152,6 +159,9 @@
 	}
 
 	@media #{$tablet} {
+		width: 50px;
+		height: 20px;
+
 		fill: $video-controls-main-color;
 
 	    &:hover {
@@ -161,5 +171,9 @@
 	    &:active {
 	    	fill: $video-controls-main-color;
 	    }
+	}
+
+	@media #{$desktop} {
+		margin-left: 20px;
 	}
 }

@@ -9,7 +9,11 @@
 
 	@media #{$tablet} {
 		flex-direction: row;
-		padding: 34px 0 32px;
+		padding: 34px 0 12px;
+	}
+
+	@media #{$desktop} {
+		padding: 34px 0;
 	}
 
 	&--gray {

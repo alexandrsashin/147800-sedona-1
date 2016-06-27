@@ -49,7 +49,7 @@
 
 	@media #{$desktop} {
 		margin-top: 52px;
-		padding: 0 10%;
+		padding: 0 32px;
 	}
 }
 
@@ -84,12 +84,28 @@
 	}
 
 	&--1 {
-		background: $main-background url("../img/photo-city@1x.jpg") 51% bottom no-repeat;
-		background-size: auto 100%;
+		background: $main-background url("../img/photo-city@1x.jpg") 50% no-repeat;
+
+		@media #{$retina} {
+			background: $main-background url("../img/photo-city@2x.jpg") 50% no-repeat;
+			background-size: 520px auto;
+		}
+
+		@media #{$tablet} {
+			background-size: cover;
+		}
 	}
 
 	&--2 {
-		background: $main-background url("../img/photo-bridge@1x.jpg") 51% bottom no-repeat;
-		background-size: auto 100%;
+		background: $main-background url("../img/photo-bridge@1x.jpg") 50% no-repeat;
+	
+		@media #{$retina} {
+			background: $main-background url("../img/photo-bridge@2x.jpg") 50% no-repeat;
+			background-size: 520px auto;
+		}
+
+		@media #{$tablet} {
+			background-size: cover;
+		}
 	}
 }

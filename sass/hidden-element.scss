@@ -1,0 +1,55 @@
+.hidden-element__mobile {
+	display: none;
+
+	@media #{$tablet} {
+		display: inline;
+	}
+}
+
+.hidden-element__tablet {
+	display: inline;
+
+	@media #{$tablet} {
+		display: none;
+	}
+
+	@media #{$desktop} {
+		display: inline;
+	}
+}
+
+.hidden-element__desktop {
+	display: inline;
+
+	@media #{$desktop} {
+		display: none;
+	}
+}
+
+.hidden-element__mobile-tablet {
+	display: none;
+
+	@media #{$desktop} {
+		display: inline;
+	}
+}
+
+.hidden-element__tablet-desktop {
+	display: inline;
+
+	@media #{$tablet} {
+		display: none;
+	}
+}
+
+.hidden-element__mobile-desktop {
+	display: none;
+
+	@media #{$tablet} {
+		display: inline;
+	}
+
+	@media #{$desktop} {
+		display: none;
+	}
+}

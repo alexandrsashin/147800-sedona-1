@@ -1,47 +1,64 @@
-.form-popup {
-	padding-top: 50px;
+.form-popup { 
+	margin: 50px 0;
 	box-sizing: border-box;
 
 	text-align: center;
 
 	background: $main-background;
-	border: 1px solid $main-background;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
 	@media #{$tablet} {
-		margin: 0 auto;
+		margin: 50px auto;
 	}
 
 	&--failure {
-		padding: 0 0 35px;
+		padding: 38px 42px 36px;
 
 		@media #{$tablet} {
+			padding: 54px 42px 48px;
 			width: 400px;
 		}
 	}
 
 	&--success {
+		padding-top: 42px;
+
 		@media #{$tablet} {
+			padding-top: 54px;
 			width: 640px;
 		}
 	}
 }
 
 .form-popup__title {
-	margin: $mobile-padding;;
-	margin: 0 0 40px;
+	margin: 0 0 26px;
 
 	@include h-font;
 	text-transform: $h-text-transform;
 
 	color: $h-color;
+
+	@media #{$tablet} {
+		margin: 0 36px 26px;
+
+		font-size: 30px;
+		line-height: 40px;
+	}
 }
 
 .form-popup__text {
-	margin: $mobile-padding;
-	margin-bottom: 30px;
+    margin: 0 0 22px;
 
 	line-height: 24px;
 	text-transform: $text-transform;
+
+	@media #{$tablet} {
+		margin: 0 0 33px;
+	}
+
+	&--success {
+		margin: 0 38px 33px;
+	}
 }
 
 .form-popup__footer {
@@ -49,14 +66,28 @@
 	padding: 20px;
 
 	background: $input-background;
+
+	@media #{$tablet} {
+		padding: 44px 90px;
+	}
 }
 
 .form-popup__btn {
 	&--failure {
 		width: 180px;
+
+		@media #{$tablet} {
+			width: 272px;
+
+			font-size: 21px;
+		}
 	}
 
-	&__btn--success {
+	&--success {
 		width: 100%;
+
+		@media #{$tablet} {
+			font-size: 21px;
+		}
 	}
 }

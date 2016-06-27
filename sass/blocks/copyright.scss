@@ -7,7 +7,6 @@
 
 .copyright__text {
 	display: inline;
-	margin: 0 11px 0 0;
 
 	font-size: 14px;
 	line-height: 26px;
@@ -19,12 +18,25 @@
 
 .copyright__link {
 	display: inline-block;
-    width: 30px;
-    height: 35px;
+    width: 42px;
+    height: 42px;
     vertical-align: middle;
 
     font-size: 0;
-	    
-    background: url("../img/logo-htmlacademy.svg") 1px 0 no-repeat;
+}
+
+.copyright__img {
+	width: 42px;
+    height: 42px;
+
+    fill: $htmlacademy-logo-color;
+
+    &:hover {
+		fill: $htmlacademy-logo-color-hover;
+    }
+
+    &:active {
+		fill: $htmlacademy-logo-color-active;
+    }
 }
 

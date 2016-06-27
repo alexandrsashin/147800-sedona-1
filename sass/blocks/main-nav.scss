@@ -2,7 +2,7 @@
 	display: block;
 }
 
-.main-nave__none {
+.main-nav-hide {
 	display: none;
 }
 
@@ -65,6 +65,7 @@
 	z-index: 2;
 	content: "";
 
+	display: block;
 	width: 22.199px;
 	height: 22.199px;
 			
@@ -122,6 +123,7 @@
 }
 
 .main-nav__toggle {
+	display: none;
 	margin: 17px 20px 17px 0;
 	width: 22.928px;
 	height: 21.982px;
@@ -138,11 +140,6 @@
 	}
 }
 
-@keyframes move {
-	from {top: 0; left: 0;}
-	to {top: 100px; left: 100px;}
-}
-
-.main-nav__appearance {
-	animation: move 10s steps(10) infinite alternate;
+.main-nav__toggle-vis {
+	display: block;
 }

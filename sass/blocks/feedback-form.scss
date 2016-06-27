@@ -457,8 +457,8 @@
 		z-index: 5;
 		content: "";
 		
-		width: 58px;
-		height: 58px;
+		width: 57px;
+		height: 57px;
 
 		background: $input-add-background;
 
@@ -468,6 +468,7 @@
 
 		@media #{$desktop} {
 			top: -21px;
+			bottom: 0;
 			left: 348px;
 		}
 	}
@@ -556,7 +557,7 @@
 }
 
 .feedback-form__input {
-	padding: 12px 20px;
+	padding: 13px 20px;
 	width: 100%;
 	box-sizing: border-box;
 

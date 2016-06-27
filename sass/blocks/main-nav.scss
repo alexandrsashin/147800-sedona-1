@@ -1,5 +1,9 @@
 .main-nav {
+	display: block;
+}
 
+.main-nave__none {
+	display: none;
 }
 
 .main-nav__list {
@@ -117,8 +121,6 @@
 	}
 }
 
-
-
 .main-nav__toggle {
 	margin: 17px 20px 17px 0;
 	width: 22.928px;
@@ -134,4 +136,13 @@
 	@media #{$tablet} {
 		display: none;
 	}
+}
+
+@keyframes move {
+	from {top: 0; left: 0;}
+	to {top: 100px; left: 100px;}
+}
+
+.main-nav__appearance {
+	animation: move 10s steps(10) infinite alternate;
 }

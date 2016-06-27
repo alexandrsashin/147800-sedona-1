@@ -302,13 +302,13 @@
 
 		@media #{$desktop} {
 			padding-left: 0;
-			width: 200px;
+			width: 204px;
 		}
 	}
 }
 
 .feedback-form__field-error {
-	display: block;
+	display: none;
 	padding-top: 5px;
 	padding-left: 21px;
 	width: 100%;
@@ -320,10 +320,10 @@
 
 	@media #{$tablet} {
 		order: -1;
-		display: inline-block;
 		margin: 0;
     	padding: 0;
 		width: 50%;
+		vertical-align: middle;
 
 		text-align: right;
 	}
@@ -334,6 +334,14 @@
 		width: 100%;
 
 		text-align: left;
+	}
+}
+
+.feedback-form__field-error-show {
+	display: block;
+
+	@media #{$tablet} {
+		display: inline-block;
 	}
 }
 
@@ -429,6 +437,7 @@
 			display: inline-block;
 			order: -2;
 			width: 50%;
+			vertical-align: middle;
 		}
 
 		@media #{$desktop} {

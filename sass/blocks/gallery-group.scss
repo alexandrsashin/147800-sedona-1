@@ -23,6 +23,7 @@
 		padding: 0;
 		width: 50%;
 
+		background: $photo-descr-background;;
 		border-top: none;
 
 		&:first-child {
@@ -126,6 +127,7 @@
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
+	text-decoration: none;
 		
 	color: $h-color;
 

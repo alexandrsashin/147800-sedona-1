@@ -1,5 +1,9 @@
 .main-nav {
+	display: block;
+}
 
+.main-nav-hide {
+	display: none;
 }
 
 .main-nav__list {
@@ -61,6 +65,7 @@
 	z-index: 2;
 	content: "";
 
+	display: block;
 	width: 22.199px;
 	height: 22.199px;
 			
@@ -117,9 +122,8 @@
 	}
 }
 
-
-
 .main-nav__toggle {
+	display: none;
 	margin: 17px 20px 17px 0;
 	width: 22.928px;
 	height: 21.982px;
@@ -134,4 +138,8 @@
 	@media #{$tablet} {
 		display: none;
 	}
+}
+
+.main-nav__toggle-vis {
+	display: block;
 }

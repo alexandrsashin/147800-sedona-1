@@ -26,5 +26,9 @@
 		@media #{$tablet} {
 			padding: 0;
 		}
+
+		@media #{$desktop} {
+			padding: 0;
+		}
 	}
 }

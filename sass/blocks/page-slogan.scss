@@ -6,20 +6,20 @@
 
 	text-align: center;
 	
-	background: $main-background url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+	background: $page-slogan-background url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
 	
 	@media #{$retina} {
-		background: $main-background url("../img/bg-back-mobile@2x.jpg") center bottom no-repeat;
+		background: $page-slogan-background url("../img/bg-back-mobile@2x.jpg") center bottom no-repeat;
 		background-size: 768px auto;
 	}
 
 	@media #{$tablet} {
 		min-height: 289px;
 
-		background: $main-background url("../img/bg-back-desktop@1x.jpg") center bottom no-repeat;
+		background: $page-slogan-background url("../img/bg-back-desktop@1x.jpg") center bottom no-repeat;
 
 		@media #{$retina} {
-			background: $main-background url("../img/bg-back-desktop@2x.jpg") center bottom no-repeat;
+			background: $page-slogan-background url("../img/bg-back-desktop@2x.jpg") center bottom no-repeat;
 			background-size: 1200px;
 		}
 	}
@@ -27,10 +27,10 @@
 	@media #{$desktop} {
 		min-height: 300px;
 
-		background: $main-background url("../img/bg-back-desktop@1x.jpg") center bottom no-repeat;
+		background: $page-slogan-background url("../img/bg-back-desktop@1x.jpg") center bottom no-repeat;
 
 		@media #{$retina} {
-			background: $main-background url("../img/bg-back-desktop@2x.jpg") center bottom no-repeat;
+			background: $page-slogan-background url("../img/bg-back-desktop@2x.jpg") center bottom no-repeat;
 			background-size: cover;
 		}
 	}

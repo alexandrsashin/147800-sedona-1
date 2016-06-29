@@ -537,10 +537,11 @@
 
 	&--checkbox::before {
 		position: absolute;
-		top: -60%;
+		bottom: 50%;
 		left: 0;
 		content: "";
 
+		margin-bottom: -28px;
 		width: 56px;
 		height: 56px;
 		box-sizing: border-box;
@@ -699,6 +700,7 @@
 .feedback-form__input {
 	padding: 12px 20px;
 	width: 100%;
+	min-width: 1px;
 	box-sizing: border-box;
 
 	@include h-font;
@@ -829,11 +831,11 @@
 	&--checkbox:checked + label svg {
 		display: block;
 		position: absolute;
-		top: -60%;
+		bottom: 50%;
 		left: 0;
 		z-index: 4;
 
-		margin: 18px 0 0 18px;
+		margin: 18px 0 -11px 18px;
 
 		width: 22px;
 		height: 22px;

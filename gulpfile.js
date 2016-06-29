@@ -28,7 +28,7 @@ gulp.task("style", function() {
         "last 2 Edge versions"
       ]}),
       mqpacker({
-        sort: true
+        sort: false
       })
     ]))
     .pipe(gulp.dest("build/css"))

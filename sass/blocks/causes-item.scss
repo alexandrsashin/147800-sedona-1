@@ -92,7 +92,10 @@
 		}
 
 		@media #{$tablet} {
-			background-size: cover;
+
+			@media #{$retina} {
+				background-size: cover;
+			}
 		}
 	}
 
@@ -105,7 +108,9 @@
 		}
 
 		@media #{$tablet} {
-			background-size: cover;
+			@media #{$retina} {
+				background-size: cover;
+			}
 		}
 	}
 }

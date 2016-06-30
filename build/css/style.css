@@ -906,9 +906,10 @@ p {
     border-radius: 50%; }
   .feedback-form__label--checkbox::before {
     position: absolute;
-    top: -60%;
+    bottom: 50%;
     left: 0;
     content: "";
+    margin-bottom: -28px;
     width: 56px;
     height: 56px;
     box-sizing: border-box;
@@ -978,6 +979,7 @@ p {
 .feedback-form__input {
   padding: 12px 20px;
   width: 100%;
+  min-width: 1px;
   box-sizing: border-box;
   font-size: 18px;
   font-weight: 700;
@@ -1061,10 +1063,10 @@ p {
   .feedback-form__input--checkbox:checked + label svg {
     display: block;
     position: absolute;
-    top: -60%;
+    bottom: 50%;
     left: 0;
     z-index: 4;
-    margin: 18px 0 0 18px;
+    margin: 18px 0 -11px 18px;
     width: 22px;
     height: 22px;
     fill: #333; }
@@ -1149,14 +1151,16 @@ p {
 
 .gallery-group__item-link img {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 280px;
   height: 280px; }
 
 .gallery-group__item-caption {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto;
+  width: 280px; }
 
 .gallery-group__item-descr {
   padding-top: 12px; }
@@ -1365,8 +1369,8 @@ p {
   .page-footer__social {
     width: calc(100% / 3); }
   .copyright {
-    width: calc(100% / 3);
-    padding: 7px 0 0; }
+    padding: 4px 0 0 17px;
+    width: calc(100% / 3); }
   .intro {
     padding: 36px 22% 41px; }
   .intro--index {
@@ -1786,6 +1790,9 @@ p {
     margin-top: 100px; }
   .page-slogan__image--index {
     margin-top: 75px; }
+  .copyright {
+    padding: 7px 0 0 36px;
+    box-sizing: border-box; }
   .intro {
     padding: 76px 381px 43px; }
   .intro--index {
